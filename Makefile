@@ -6,7 +6,7 @@
 #    By: buehara <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/17 12:44:47 by buehara           #+#    #+#              #
-#    Updated: 2025/07/17 14:21:32 by buehara          ###   ########.fr        #
+#    Updated: 2025/07/19 19:10:15 by buehara          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,8 +17,11 @@ CFLAGS = -Wall -Werror -Wextra
 AR = ar
 RCS = rcs
 CC = gcc
-C_SOURCE = $(wildcard *.c)
-H_SOURCE = $(wildcard *.h)
+C_SOURCE = ft_memset.c	\
+	   ft_strlcpy.c
+
+#H_SOURCE = $(wildcard *.h)
+
 OBJ = $(C_SOURCE:.c=.o)
 
 
@@ -27,9 +30,9 @@ OBJ = $(C_SOURCE:.c=.o)
 all: $(NAME)
 
 $(NAME) : $(OBJ)
-	$(AR) $(RCS) $(CFLAGS) $@ $^
+	$(AR) $(RCS) $(NAME) $(OBJ)
 
-%.o : %.c %.h
+%.o : %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 

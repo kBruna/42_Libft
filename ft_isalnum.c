@@ -6,7 +6,7 @@
 /*   By: buehara <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 20:14:13 by buehara           #+#    #+#             */
-/*   Updated: 2025/07/17 20:25:00 by buehara          ###   ########.fr       */
+/*   Updated: 2025/07/19 12:48:26 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_isdigit(int c);
 int	ft_isalnum(int c)
 {
 	if (ft_isalpha(c) || ft_isdigit(c))
-		return (c);
+		return (1);
 	return (0);
 }
 /*

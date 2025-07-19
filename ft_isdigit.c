@@ -6,7 +6,7 @@
 /*   By: buehara <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 18:57:14 by buehara           #+#    #+#             */
-/*   Updated: 2025/07/17 19:48:29 by buehara          ###   ########.fr       */
+/*   Updated: 2025/07/19 12:48:11 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@ int	ft_isdigit(int c);
 int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
-		return (c);
+		return (1);
 	return (0);
 }
 /*
