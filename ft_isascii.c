@@ -6,7 +6,7 @@
 /*   By: buehara <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 12:46:31 by buehara           #+#    #+#             */
-/*   Updated: 2025/07/19 13:02:53 by buehara          ###   ########.fr       */
+/*   Updated: 2025/07/22 18:51:23 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@ int	ft_isascii(int c);
 
 int	ft_isascii(int c)
 {
-	if (c > 31 && c < 128)
+	if (c >= 0 && c < 128)
 		return (1);
 	return (0);
 }
@@ -23,8 +23,8 @@ int	ft_isascii(int c)
 #include <stdio.h>
 int     main(void)
 {
-        int     test = '0';
-        int     test2 = '9';
+        char    test = ;
+        char    test2 = 9;
         char    test3 = 'a';
         char    test4 = '=';
         char    test5 = '!';

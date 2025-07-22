@@ -6,20 +6,24 @@
 /*   By: buehara <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 17:02:56 by buehara           #+#    #+#             */
-/*   Updated: 2025/07/19 19:03:29 by buehara          ###   ########.fr       */
+/*   Updated: 2025/07/22 18:34:54 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void *ft_memset(void *font, int c, int num);
+#include "libft.h"
 
-void *ft_memset(void *font, int c, int num)
+void	*ft_memset(void *font, int c, size_t num);
+
+void	*ft_memset(void *font, int c, size_t num)
 {
-	int	ctrl;
+	unsigned int	ctrl;
+	unsigned char	*str;
 
 	ctrl = 0;
+	str = font;
 	while (ctrl < num)
 	{
-		((char*)font)[ctrl] = c;
+		str[ctrl] = c;
 		ctrl++;
 	}
 	return (font);
@@ -40,7 +44,7 @@ int	main(void)
 	
 	printf("\nOriginal string:\n\t%s", str1);
 	printf("\nReturn original function: \n\t%s", str2);
-	printf("\nReturn my_funcion: \n\t%s", str3);
+	printf("\nReturn my_funcion: \n\t%s\n", str3);
 
 	return (0);
 }*/

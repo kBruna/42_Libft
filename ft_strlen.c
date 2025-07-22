@@ -6,13 +6,15 @@
 /*   By: buehara <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 13:11:12 by buehara           #+#    #+#             */
-/*   Updated: 2025/07/16 17:15:37 by buehara          ###   ########.fr       */
+/*   Updated: 2025/07/22 18:35:43 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str);
+#include "libft.h"
 
-int	ft_strlen(char *str)
+size_t	ft_strlen(char *str);
+
+size_t	ft_strlen(char *str)
 {
 	int	count;
 

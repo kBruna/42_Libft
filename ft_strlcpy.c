@@ -6,16 +6,18 @@
 /*   By: buehara <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 14:51:13 by buehara           #+#    #+#             */
-/*   Updated: 2025/07/19 16:50:40 by buehara          ###   ########.fr       */
+/*   Updated: 2025/07/20 20:17:14 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int len_dest);
+#include <stddef.h>
 
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int len_dest)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size);
+
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	unsigned int	count;
-	int				ctrl;
+	size_t	count;
+	int		ctrl;
 
 	count = 0;
 	ctrl = 0;
@@ -23,14 +25,14 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int len_dest)
 	{
 		ctrl++;
 	}
-	if (len_dest > 0)
+	if (size > 0)
 	{
-		while ((src[count] != '\0') && (count < len_dest - 1))
+		while ((src[count] != '\0') && (count < size - sizeof(char)))
 		{
-			dest[count] = src[count];
+			dst[count] = src[count];
 			count++;
 		}
-	dest[count] = '\0';
+	dst[count] = '\0';
 	}
 	return (ctrl);
 }
@@ -68,9 +70,9 @@ int	main(void)
 	unsigned int	myfunc_1 = ft_strlcpy(str_cp2_dest1, str_orig1, 2);
 	unsigned int	myfunc_2 = ft_strlcpy(str_cp2_dest2, str_orig2, 10);
 
-	printf("\nOriginal Function:\n\tString 01: %s\t\tReturn : %d \n\tString 02: 
-	%s\t\tReturn : %d", str_cp1_dest1, orig_1, str_cp1_dest2, orig_2);
+	printf("\nOriginal Function:\n\tString 01: %s\t\tReturn : %d 
+\n\tString 02: %s\t\tReturn : %d", str_cp1_dest1, orig_1, str_cp1_dest2, orig_2);
 	printf("\n\nMy function:\n\tString 01: %s \t\tReturn : %d\n\tString 02: 
-	%s\t\tReturn : %d\n", str_cp2_dest1, myfunc_1, str_cp2_dest2, myfunc_2);
+%s\t\tReturn : %d\n", str_cp2_dest1, myfunc_1, str_cp2_dest2, myfunc_2);
 	return (0);
 }*/

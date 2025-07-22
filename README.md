@@ -3,27 +3,28 @@
 
  - Functions List #<ctype.h>
 
-[x] ft_isalpha;\n
-[x] ft_isdigit;\n
-[x] ft_isalnum;\n
-[x] ft_isascii;\n
-[x] ft_isprint;\n
-[x] ft_toupper;\n
-[x] ft_tolower;\n
-[x] ft_strlen;\n
-[x] ft_memset;\n
-[ ] ft_bzero;\n
-[ ] ft_memcpy;\n
-[ ] ft_memmove;\n
-[x] ft_strlcpy;\n
-[ ] ft_strlcat;\n
-[ ] ft_strchr;\n
-[ ] ft_strrchr;\n
-[ ] ft_strncmp;\n
-[ ] ft_memchr;\n
-[ ] ft_memcmp;\n
-[ ] ft_strnstr;\n
-[ ] ft_atoi;\n
+- [x] ft_bzero
+- [ ] ft_atoi
+- [x] ft_isalnum
+- [x] ft_isalpha
+- [x] ft_isascii
+- [x] ft_isdigit
+- [x] ft_isprint
+- [x] ft_memcpy
+- [ ] ft_memchr
+- [ ] ft_memcmp
+- [ ] ft_memmove
+- [x] ft_memset
+- [x] ft_strlen
+- [x] ft_strlcpy
+- [ ] ft_strlcat
+- [ ] ft_strchr
+- [ ] ft_strncmp
+- [ ] ft_strnstr
+- [ ] ft_strrchr
+- [x] ft_tolower
+- [x] ft_toupper
+
 
  - with malloc()\n
 [ ] ft_calloc;\n
@@ -34,17 +35,18 @@
 
  - Extra Functions
 
-[ ] ft_substr;\n
-[ ] ft_strjoin;\n
-[ ] ft_strtrin;\n
-[ ] ft_split;\n
-[ ] ft_itoa;\n
-[ ] ft_strmapi;\n
-[ ] ft_striteri;\n
-[ ] ft\_putchar_fd;\n
-[ ] ft\_putstr_fd;\n
-[ ] ft\_putendl_fd;\n
-[ ] ft\_putnbr_fd;\n
+- [ ] `ft_itoa`
+- [ ] `ft_putchar_fd`
+- [ ] `ft_putendl_fd`
+- [ ] `ft_putnbr_fd`
+- [ ] `ft_putstr_fd`
+- [ ] `ft_split`
+- [ ] `ft_striteri`
+- [ ] `ft_strjoin`
+- [ ] `ft_strmapi`
+- [ ] `ft_strtrin`
+- [ ] `ft_substr`
+
 
 === Testes ===
 
