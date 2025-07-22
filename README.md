@@ -3,27 +3,27 @@
 
  - Functions List #<ctype.h>
 
-- [x] ft_bzero
+- [x] ft_bzero - Test OK
 - [ ] ft_atoi
-- [x] ft_isalnum
-- [x] ft_isalpha
-- [x] ft_isascii
-- [x] ft_isdigit
-- [x] ft_isprint
-- [x] ft_memcpy
+- [x] ft_isalnum - Test OK
+- [x] ft_isalpha - Test OK
+- [x] ft_isascii - Test OK
+- [x] ft_isdigit - Test OK
+- [x] ft_isprint - Test OK
+- [x] ft_memcpy - Test OK
 - [ ] ft_memchr
 - [ ] ft_memcmp
 - [ ] ft_memmove
-- [x] ft_memset
-- [x] ft_strlen
-- [x] ft_strlcpy
+- [x] ft_memset - Test OK
+- [x] ft_strlen - Test OK (with Warning)
+- [x] ft_strlcpy - Test OK (with Warning)
 - [ ] ft_strlcat
 - [ ] ft_strchr
 - [ ] ft_strncmp
 - [ ] ft_strnstr
 - [ ] ft_strrchr
-- [x] ft_tolower
-- [x] ft_toupper
+- [x] ft_tolower - Test OK
+- [x] ft_toupper - Test OK
 
 
  - with malloc()\n
