@@ -6,7 +6,7 @@
 /*   By: buehara <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 16:33:21 by buehara           #+#    #+#             */
-/*   Updated: 2025/07/22 18:19:35 by buehara          ###   ########.fr       */
+/*   Updated: 2025/07/24 17:41:20 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,13 @@ void			*ft_memcpy(void *dest, const void *src, size_t n);
 
 void			*ft_memset(void *font, int c, size_t num);
 
-size_t			ft_strlen(char *str);
+void			*ft_memmove(void *dest, const void *src, size_t n);
 
-size_t			ft_strlcpy(char *dest, char *src, size_t len_dest);
+size_t			ft_strlen(const char *str);
+
+size_t			ft_strlcat(char *dst, const char *src, size_t size);
+
+size_t			ft_strlcpy(char *dest, char *src, size_t size);
 
 int				ft_tolower(int c);
 

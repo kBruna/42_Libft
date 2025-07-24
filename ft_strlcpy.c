@@ -6,7 +6,7 @@
 /*   By: buehara <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 14:51:13 by buehara           #+#    #+#             */
-/*   Updated: 2025/07/20 20:17:14 by buehara          ###   ########.fr       */
+/*   Updated: 2025/07/24 15:30:34 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 			dst[count] = src[count];
 			count++;
 		}
-	dst[count] = '\0';
+		dst[count] = '\0';
 	}
 	return (ctrl);
 }
