@@ -11,17 +11,17 @@
 - [x] ft_isdigit - Test OK
 - [x] ft_isprint - Test OK
 - [x] ft_memcpy - Test OK
-- [ ] ft_memchr
-- [ ] ft_memcmp
-- [ ] ft_memmove
+- [x] ft_memchr - Test OK
+- [x] ft_memcmp - Test OK
+- [x] ft_memmove - Test OK
 - [x] ft_memset - Test OK
 - [x] ft_strlen - Test OK (with Warning)
 - [x] ft_strlcpy - Test OK (with Warning)
-- [ ] ft_strlcat
-- [ ] ft_strchr
+- [x] ft_strlcat - Test OK
+- [x] ft_strchr
 - [ ] ft_strncmp
 - [ ] ft_strnstr
-- [ ] ft_strrchr
+- [x] ft_strrchr
 - [x] ft_tolower - Test OK
 - [x] ft_toupper - Test OK
 

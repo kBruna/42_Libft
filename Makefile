@@ -6,7 +6,7 @@
 #    By: buehara <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/17 12:44:47 by buehara           #+#    #+#              #
-#    Updated: 2025/07/24 13:49:48 by buehara          ###   ########.fr        #
+#    Updated: 2025/07/24 19:39:42 by buehara          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,9 +26,11 @@ C_SOURCE = 	ft_bzero.c		\
 				ft_memcpy.c		\
 				ft_memset.c		\
 				ft_memmove.c	\
+				ft_strchr.c		\
 				ft_strlen.c		\
 				ft_strlcat.c	\
 				ft_strlcpy.c	\
+				ft_strrchr.c	\
 				ft_tolower.c	\
 				ft_toupper.c	
 
