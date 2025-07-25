@@ -6,7 +6,7 @@
 #    By: buehara <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/17 12:44:47 by buehara           #+#    #+#              #
-#    Updated: 2025/07/24 19:39:42 by buehara          ###   ########.fr        #
+#    Updated: 2025/07/24 21:00:34 by buehara          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,6 +30,7 @@ C_SOURCE = 	ft_bzero.c		\
 				ft_strlen.c		\
 				ft_strlcat.c	\
 				ft_strlcpy.c	\
+				ft_strncmp.c	\
 				ft_strrchr.c	\
 				ft_tolower.c	\
 				ft_toupper.c	
