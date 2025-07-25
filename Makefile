@@ -6,7 +6,7 @@
 #    By: buehara <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/17 12:44:47 by buehara           #+#    #+#              #
-#    Updated: 2025/07/25 14:52:11 by buehara          ###   ########.fr        #
+#    Updated: 2025/07/25 20:54:23 by buehara          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,8 @@ CFLAGS = -Wall -Werror -Wextra
 AR = ar
 RCS = rcs
 CC = gcc
-C_SOURCE = 	ft_bzero.c		\
+C_SOURCE = 	ft_atoi.c		\
+				ft_bzero.c		\
 				ft_isalnum.c	\
 				ft_isalpha.c	\
 				ft_isascii.c	\
@@ -33,6 +34,7 @@ C_SOURCE = 	ft_bzero.c		\
 				ft_strlcat.c	\
 				ft_strlcpy.c	\
 				ft_strncmp.c	\
+				ft_strnstr.c	\
 				ft_strrchr.c	\
 				ft_tolower.c	\
 				ft_toupper.c	
@@ -50,6 +52,9 @@ $(NAME) : $(OBJ)
 %.o : %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
+so:
+	$(CC) -fPIC $(CFLAGS) -c $(C_SOURCE)
+	gcc -shared -o libft.so $(OBJ)
 
 # === Bonus Rules ===
 

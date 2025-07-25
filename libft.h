@@ -6,7 +6,7 @@
 /*   By: buehara <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 16:33:21 by buehara           #+#    #+#             */
-/*   Updated: 2025/07/25 14:56:43 by buehara          ###   ########.fr       */
+/*   Updated: 2025/07/25 20:54:59 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 # define LIBFT_H
 
 # include <stddef.h>
+
+int				ft_atoi(const char *nptr);
 
 void			ft_bzero(void *s, size_t n);
 
@@ -44,6 +46,8 @@ size_t			ft_strlen(const char *str);
 size_t			ft_strlcat(char *dst, const char *src, size_t size);
 
 size_t			ft_strlcpy(char *dest, const char *src, size_t size);
+
+char			*ft_strnstr(const char *big, const char *little, size_t len);
 
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
 
