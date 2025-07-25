@@ -11,8 +11,8 @@
 - [x] ft_isdigit - Test OK
 - [x] ft_isprint - Test OK
 - [x] ft_memcpy - Test OK
-- [ ] ft_memchr
-- [ ] ft_memcmp
+- [x] ft_memchr - Test OK
+- [x] ft_memcmp - Test OK
 - [x] ft_memmove - Test OK
 - [x] ft_memset - Test OK
 - [x] ft_strlen - Test OK
