@@ -4,7 +4,7 @@
  - Functions List #<ctype.h>
 
 - [x] ft_bzero - Test OK
-- [ ] ft_atoi
+- [x] ft_atoi - Test OK
 - [x] ft_isalnum - Test OK
 - [x] ft_isalpha - Test OK
 - [x] ft_isascii - Test OK
@@ -18,18 +18,18 @@
 - [x] ft_strlen - Test OK
 - [x] ft_strlcpy - Test OK
 - [x] ft_strlcat - Test OK
-- [x] ft_strchr
-- [x] ft_strncmp
-- [ ] ft_strnstr
-- [x] ft_strrchr
+- [x] ft_strchr - Test OK
+- [x] ft_strncmp - Test OK
+- [x] ft_strnstr - Test OK
+- [x] ft_strrchr - Test OK
 - [x] ft_tolower - Test OK
 - [x] ft_toupper - Test OK
 
 
- - with malloc()\n
-[ ] ft_calloc;\n
+ - with malloc()
+[ ] ft_calloc;
 	- If (nmemb || size) = 0; return (\*unique) -> free()
-[ ] ft_strdup;\n
+[ ] ft_strdup;
 
 	- strlcpy, strlcat, bzero -> #include <bsd/string.h> -> cc -lbsd
 

@@ -6,7 +6,7 @@
 /*   By: buehara <buehara@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 19:00:36 by buehara           #+#    #+#             */
-/*   Updated: 2025/07/25 20:54:03 by buehara          ###   ########.fr       */
+/*   Updated: 2025/07/27 15:21:43 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,27 @@ int	ft_atoi(const char *nptr);
 
 int	ft_atoi(const char *nptr)
 {
-	int	signal;
-	int	number;
+	int		signal;
+	long int	number;
 
 	number = 0;
 	signal = 1;
-	while (*nptr == ' ')
+	while (*nptr >= 0 && *nptr <= 32)
 		nptr++;
-	if (*nptr++ == '-')
-		signal = -1;
-	else if (*nptr++ == '+')
-		signal = 1;
+	if (*nptr == '-' || *nptr == '+')
+	{
+		if (*nptr == '-')
+			signal = -1;
+		nptr++;
+	}
 	while (*nptr)
 	{
 		if (*nptr >= '0' && *nptr <= '9')
-			number = number * 10 + *nptr - '0';
-		nptr++;
-		if (!(*nptr >= '0' && *nptr <= '9') || *nptr == '\0')
+		{
+			number = number * 10 + (*nptr - '0');
+			nptr++;
+		}
+		if (!(*nptr >= '0' && *nptr <= '9'))
 			return (number * signal);
 	}
 	return (0);
@@ -40,11 +44,11 @@ int	ft_atoi(const char *nptr)
 #include <stdlib.h>
 int	main(void)
 {
-	char	*str1 = "-123$4";
-	char	*str2 = "-12345";
-	char	*str3 = "$$$$  009876500";
+	char	*str1 = "+42lyon1";
+	char	*str2 = "+1";
+	char	*str3 = "-1";
 
-	printf("Original function: \t%d\t%d\n", atoi(str2), atoi(str3));
-	printf("My function: \t\t%d\t%d\n", ft_atoi(str2), ft_atoi(str3));
+	printf("Original function: \t%d\t%d\t%d\n", atoi(str1), atoi(str2), atoi(str3));
+	printf("My function: \t\t%d\t%d\t%d\n", ft_atoi(str1), ft_atoi(str2), ft_atoi(str3));
 	return (0);
 }*/
