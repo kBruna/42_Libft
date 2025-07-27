@@ -6,7 +6,7 @@
 #    By: buehara <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/17 12:44:47 by buehara           #+#    #+#              #
-#    Updated: 2025/07/27 17:10:39 by buehara          ###   ########.fr        #
+#    Updated: 2025/07/27 20:10:16 by buehara          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,6 +35,7 @@ C_SOURCE = 	ft_atoi.c		\
 				ft_strlcat.c	\
 				ft_strlcpy.c	\
 				ft_strncmp.c	\
+				ft_strdup.c		\
 				ft_strnstr.c	\
 				ft_strrchr.c	\
 				ft_tolower.c	\

@@ -27,9 +27,9 @@
 
 
  - with malloc()
-[ ] ft_calloc;
+[x] ft_calloc - Test OK
 	- If (nmemb || size) = 0; return (\*unique) -> free()
-[ ] ft_strdup;
+[x] ft_strdup;
 
 	- strlcpy, strlcat, bzero -> #include <bsd/string.h> -> cc -lbsd
 

@@ -6,7 +6,7 @@
 /*   By: buehara <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 16:33:21 by buehara           #+#    #+#             */
-/*   Updated: 2025/07/27 17:11:09 by buehara          ###   ########.fr       */
+/*   Updated: 2025/07/27 20:11:38 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,8 @@ size_t			ft_strlen(const char *str);
 size_t			ft_strlcat(char *dst, const char *src, size_t size);
 
 size_t			ft_strlcpy(char *dest, const char *src, size_t size);
+
+char			*ft_strdup(const char *s);
 
 char			*ft_strnstr(const char *big, const char *little, size_t len);
 
