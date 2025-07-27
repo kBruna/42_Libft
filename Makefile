@@ -6,7 +6,7 @@
 #    By: buehara <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/17 12:44:47 by buehara           #+#    #+#              #
-#    Updated: 2025/07/25 20:54:23 by buehara          ###   ########.fr        #
+#    Updated: 2025/07/27 17:10:39 by buehara          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,7 @@ RCS = rcs
 CC = gcc
 C_SOURCE = 	ft_atoi.c		\
 				ft_bzero.c		\
+				ft_calloc.c		\
 				ft_isalnum.c	\
 				ft_isalpha.c	\
 				ft_isascii.c	\
