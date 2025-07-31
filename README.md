@@ -117,7 +117,7 @@
 - [x] `ft_split` - Test OK
 - [ ] `ft_striteri`
 - [x] `ft_strjoin` - Test OK
-- [ ] `ft_strmapi`
+- [x] `ft_strmapi` - Test OK
 - [x] `ft_strtrin` - Test OK
 - [x] `ft_substr` - Test OK
 
