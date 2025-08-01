@@ -115,7 +115,7 @@
 - [ ] `ft_putnbr_fd`
 - [ ] `ft_putstr_fd`
 - [x] `ft_split` - Test OK
-- [ ] `ft_striteri`
+- [x] `ft_striteri` - Test OK
 - [x] `ft_strjoin` - Test OK
 - [x] `ft_strmapi` - Test OK
 - [x] `ft_strtrin` - Test OK

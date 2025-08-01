@@ -6,7 +6,7 @@
 #    By: buehara <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/17 12:44:47 by buehara           #+#    #+#              #
-#    Updated: 2025/07/31 20:23:43 by buehara          ###   ########.fr        #
+#    Updated: 2025/08/01 12:16:14 by buehara          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,6 +33,7 @@ C_SOURCE = 	ft_atoi.c		\
 			ft_memmove.c	\
 			ft_split.c		\
 			ft_strchr.c		\
+			ft_striteri.c	\
 			ft_strjoin.c	\
 			ft_strlen.c		\
 			ft_strlcat.c	\
