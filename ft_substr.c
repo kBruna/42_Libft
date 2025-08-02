@@ -6,7 +6,7 @@
 /*   By: buehara <buehara@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 18:13:22 by buehara           #+#    #+#             */
-/*   Updated: 2025/07/30 19:04:39 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/01 16:12:08 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	if (ft_strlen(s) < start)
 		*ptr = '\0';
-	else
+	else if (ft_strlen(&s[start]) >= len)
 		ft_strlcpy(ptr, &s[start], len + 1);
+	else
+		ft_strlcpy(ptr, &s[start], (ft_strlen(s) + 1));
 	return (ptr);
 }
 /*

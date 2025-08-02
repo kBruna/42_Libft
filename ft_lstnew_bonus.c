@@ -1,36 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: buehara <buehara@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/28 20:50:21 by buehara           #+#    #+#             */
-/*   Updated: 2025/08/01 15:02:00 by buehara          ###   ########.fr       */
+/*   Created: 2025/08/01 16:47:47 by buehara           #+#    #+#             */
+/*   Updated: 2025/08/01 17:35:00 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s1, char const *set);
-
-char	*ft_strtrim(char const *s1, char const *set)
+t_list	*ft_lstnew(void *content)
 {
-	char	*ptr;
-	size_t	start;
-	size_t	end;
+	t_list	*head;
 
-	if (!s1 || !set)
+	head = (t_list *) malloc(sizeof(t_list));
+	if(!head)
 		return (NULL);
-	start = 0;
-	while (s1[start] && ft_strchr(set, s1[start]))
-		start++;
-	end = ft_strlen(s1);
-	while (end > start && ft_strrchr(set, s1[end - 1]))
-		end--;
-	ptr = malloc((end - start + 1));
-	if (ptr == NULL)
-		return (NULL);
-	ft_strlcpy(ptr, &s1[start], end - start + 1);
-	return (ptr);
+	head->content = content;
+	head->next = NULL;
+	return (head);
 }

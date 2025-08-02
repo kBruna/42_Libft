@@ -6,7 +6,7 @@
 /*   By: buehara <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 16:33:21 by buehara           #+#    #+#             */
-/*   Updated: 2025/08/01 12:17:31 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/01 20:51:19 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,13 @@
 
 # include <stddef.h>
 # include <stdlib.h>
+# include <unistd.h>
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}					t_list;
 
 int				ft_atoi(const char *nptr);
 
@@ -43,6 +50,14 @@ void			*ft_memcpy(void *dest, const void *src, size_t n);
 void			*ft_memset(void *font, int c, size_t num);
 
 void			*ft_memmove(void *dest, const void *src, size_t n);
+
+void			ft_putchar_fd(char c, int fd);
+
+void			ft_putendl_fd(char *s, int fd);
+
+void			ft_putstr_fd(char *s, int fd);
+
+void			ft_putnbr_fd(int n, int fd);
 
 char			**ft_split(char const *s, char c);
 
@@ -75,5 +90,13 @@ char			*ft_substr(char const *s, unsigned int start, size_t len);
 int				ft_tolower(int c);
 
 int				ft_toupper(int c);
+
+void			ft_lstadd_front(t_list **lst, t_list *new);
+
+t_list			*ft_lstlast(t_list *lst);
+
+t_list			*ft_lstnew(void *content);
+
+int				ft_lstsize(t_list *lst);
 
 #endif

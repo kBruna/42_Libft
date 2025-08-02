@@ -6,7 +6,7 @@
 /*   By: buehara <buehara@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/20 15:42:37 by buehara           #+#    #+#             */
-/*   Updated: 2025/07/22 18:17:59 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/01 15:28:06 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char			*copy;
 	unsigned const char		*original;
 
+	if (n == 0 || (!src && !dest))
+		return (dest);
 	ctrl = 0;
 	copy = dest;
 	original = src;

@@ -6,7 +6,7 @@
 /*   By: buehara <buehara@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 19:13:40 by buehara           #+#    #+#             */
-/*   Updated: 2025/07/24 12:42:01 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/01 15:02:31 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,9 @@ int     main(void)
         ft_memmove(str_cp2_dest1, str_orig1, sizeof(char) * 3);
         ft_memmove(&str_orig2[0], &str_orig2[6], sizeof(char) * 5);
 
-        printf("\nOriginal Function:\n\tString 01: %s\n\tString 02: %s\n", str_cp1_dest1, str_cp1_dest2);
-        printf("\n\nMy function:\n\tString 01: %s\n\tString 02: %s\n\n", str_cp2_dest1, str_cp2_dest2);
+        printf("\nOriginal Function:\n\tString 01: %s\n\tString 02: 
+%s\n", str_cp1_dest1, str_cp1_dest2);
+        printf("\n\nMy function:\n\tString 01: %s\n\tString 02: 
+%s\n\n", str_cp2_dest1, str_cp2_dest2);
         return (0);
 }*/

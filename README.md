@@ -29,7 +29,7 @@
 > Checks for a digit (0 through 9).
 
 
-- [x] ft_isprint - Test OK
+- [x] ft_isprint - Test OK?:
 > Checks for any printable character except space.
 
 
@@ -110,7 +110,7 @@
  - Extra Functions
 
 - [x] `ft_itoa` - Test OK
-- [ ] `ft_putchar_fd`
+- [x] `ft_putchar_fd` - Test OK
 - [ ] `ft_putendl_fd`
 - [ ] `ft_putnbr_fd`
 - [ ] `ft_putstr_fd`

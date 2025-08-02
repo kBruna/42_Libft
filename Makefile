@@ -6,7 +6,7 @@
 #    By: buehara <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/17 12:44:47 by buehara           #+#    #+#              #
-#    Updated: 2025/08/01 12:16:14 by buehara          ###   ########.fr        #
+#    Updated: 2025/08/01 20:50:38 by buehara          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ NAME = libft.a
 CFLAGS = -Wall -Werror -Wextra
 AR = ar
 RCS = rcs
-CC = cc
+CC = gcc
 C_SOURCE = 	ft_atoi.c		\
 			ft_bzero.c		\
 			ft_calloc.c		\
@@ -31,6 +31,10 @@ C_SOURCE = 	ft_atoi.c		\
 			ft_memcpy.c		\
 			ft_memset.c		\
 			ft_memmove.c	\
+			ft_putchar_fd.c	\
+			ft_putendl_fd.c	\
+			ft_putnbr_fd.c	\
+			ft_putstr_fd.c	\
 			ft_split.c		\
 			ft_strchr.c		\
 			ft_striteri.c	\
@@ -48,9 +52,14 @@ C_SOURCE = 	ft_atoi.c		\
 			ft_tolower.c	\
 			ft_toupper.c	
 
+C_BONUS = 	ft_lstnew_bonus.c		\
+			ft_lstadd_front_bonus.c	\
+			ft_lstsize_bonus.c		\
+			ft_lstlast_bonus.c
 
 OBJ = $(C_SOURCE:.c=.o)
 
+OBJ_BONUS = $(C_BONUS:.c=.o)
 
 # === CC Rules ===
 
@@ -62,26 +71,22 @@ $(NAME) : $(OBJ)
 %.o : %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
-so:
-	$(CC) -fPIC $(CFLAGS) -c $(C_SOURCE)
-	gcc -shared -o libft.so $(OBJ)
-
 # === Bonus Rules ===
 
-BONUS = _bonus.{c/h}
-
+bonus : $(OBJ_BONUS)
+	$(AR) r $(NAME) $(OBJ_BONUS)
 
 # === Clean Rules ===
 
 clean:
-	rm -f $(OBJ)
+	rm -f $(OBJ) $(OBJ_BONUS)
 
-fclean:
-	rm -rf $(NAME)
+fclean: clean
+	rm -f $(NAME)
 
 re: fclean all
 
 
 # === PHONY ===
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re bonus
