@@ -6,7 +6,7 @@
 /*   By: buehara <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 16:33:21 by buehara           #+#    #+#             */
-/*   Updated: 2025/08/01 20:51:19 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/02 16:15:02 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,6 +92,12 @@ int				ft_tolower(int c);
 int				ft_toupper(int c);
 
 void			ft_lstadd_front(t_list **lst, t_list *new);
+
+void			ft_lstadd_back(t_list **lst, t_list *new);
+
+void			ft_lstclear(t_list **lst, void (*del)(void *));
+
+void			ft_lstdelone(t_list *lst, void (*del)(void *));
 
 t_list			*ft_lstlast(t_list *lst);
 

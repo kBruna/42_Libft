@@ -111,9 +111,9 @@
 
 - [x] `ft_itoa` - Test OK
 - [x] `ft_putchar_fd` - Test OK
-- [ ] `ft_putendl_fd`
-- [ ] `ft_putnbr_fd`
-- [ ] `ft_putstr_fd`
+- [x] `ft_putendl_fd` - Test OK
+- [x] `ft_putnbr_fd` - Test OK
+- [x] `ft_putstr_fd` - Test OK
 - [x] `ft_split` - Test OK
 - [x] `ft_striteri` - Test OK
 - [x] `ft_strjoin` - Test OK
@@ -121,6 +121,24 @@
 - [x] `ft_strtrin` - Test OK
 - [x] `ft_substr` - Test OK
 
+
+==== Bonus ====
+
+typedef struct	s_list
+{
+	void		*content;
+	struct s_list	*next;
+}		t_list;
+
+- [x] ft_lstnew - Test OK
+- [x] `ft_lstadd_front` - Test OK
+- [x] ft_lstsize - Test OK
+- [x] ft_lstlast - Test OK
+- [x] `ft_lstadd_back` - Test OK
+- [x] ft_lstdelone - Test OK
+- [x] ft_lstclear
+- [ ] ft_lstiter
+- [ ] ft_lstmap
 
 === Testes ===
 

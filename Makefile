@@ -6,7 +6,7 @@
 #    By: buehara <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/17 12:44:47 by buehara           #+#    #+#              #
-#    Updated: 2025/08/01 20:50:38 by buehara          ###   ########.fr        #
+#    Updated: 2025/08/02 16:15:33 by buehara          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -55,7 +55,10 @@ C_SOURCE = 	ft_atoi.c		\
 C_BONUS = 	ft_lstnew_bonus.c		\
 			ft_lstadd_front_bonus.c	\
 			ft_lstsize_bonus.c		\
-			ft_lstlast_bonus.c
+			ft_lstlast_bonus.c		\
+			ft_lstadd_back_bonus.c	\
+			ft_lstdelone_bonus.c	\
+			ft_lstclear_bonus.c
 
 OBJ = $(C_SOURCE:.c=.o)
 
@@ -73,8 +76,8 @@ $(NAME) : $(OBJ)
 
 # === Bonus Rules ===
 
-bonus : $(OBJ_BONUS)
-	$(AR) r $(NAME) $(OBJ_BONUS)
+bonus : 
+	$(MAKE) OBJ="$(OBJ) $(OBJ_BONUS)" all
 
 # === Clean Rules ===
 
