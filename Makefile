@@ -6,11 +6,9 @@
 #    By: buehara <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/17 12:44:47 by buehara           #+#    #+#              #
-#    Updated: 2025/08/02 19:32:26 by buehara          ###   ########.fr        #
+#    Updated: 2025/08/04 20:47:14 by buehara          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
-# === Variables ===
 
 NAME = libft.a
 CFLAGS = -Wall -Werror -Wextra
@@ -66,7 +64,6 @@ OBJ = $(C_SOURCE:.c=.o)
 
 OBJ_BONUS = $(C_BONUS:.c=.o)
 
-# === CC Rules ===
 
 all: $(NAME)
 
@@ -76,12 +73,9 @@ $(NAME) : $(OBJ)
 %.o : %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
-# === Bonus Rules ===
-
 bonus : 
 	$(MAKE) OBJ="$(OBJ) $(OBJ_BONUS)" all
 
-# === Clean Rules ===
 
 clean:
 	rm -f $(OBJ) $(OBJ_BONUS)
@@ -90,8 +84,5 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
-
-
-# === PHONY ===
 
 .PHONY: all clean fclean re bonus
