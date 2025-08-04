@@ -6,41 +6,39 @@
 /*   By: buehara <buehara@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 19:13:40 by buehara           #+#    #+#             */
-/*   Updated: 2025/08/01 15:02:31 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/04 18:59:39 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n);
-
-void	*ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dst, const void *src, size_t n)
 {
-	unsigned char	*dst;
+	unsigned char	*dest;
 	unsigned char	*org;
 	size_t			ctrl;
 
-	dst = (unsigned char *)dest;
+	dest = (unsigned char *)dst;
 	org = (unsigned char *)src;
-	if ((dst == NULL) && (org == NULL))
-		return (dst);
-	if (*dst < *org)
+	if ((dest == NULL) && (org == NULL))
+		return (dest);
+	if (*dest < *org)
 	{
 		ctrl = 0;
 		while (ctrl < n)
 		{
-			dst[ctrl] = org[ctrl];
+			dest[ctrl] = org[ctrl];
 			ctrl++;
 		}
-		return (dst);
+		return (dest);
 	}
 	n--;
 	while ((int)n >= 0)
 	{
-			dst[n] = org[n];
+			dest[n] = org[n];
 			n--;
 	}
-	return (dst);
+	return (dest);
 }
 /*
 #include <stddef.h>

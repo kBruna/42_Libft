@@ -6,13 +6,11 @@
 /*   By: buehara <buehara@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 15:50:33 by buehara           #+#    #+#             */
-/*   Updated: 2025/07/25 18:30:41 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/04 19:07:55 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char	*ft_strnstr(const char *big, const char *little, size_t len);
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {

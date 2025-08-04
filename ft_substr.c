@@ -6,13 +6,11 @@
 /*   By: buehara <buehara@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 18:13:22 by buehara           #+#    #+#             */
-/*   Updated: 2025/08/01 16:12:08 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/04 19:09:09 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

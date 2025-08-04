@@ -6,27 +6,25 @@
 /*   By: buehara <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 17:02:56 by buehara           #+#    #+#             */
-/*   Updated: 2025/07/22 18:34:54 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/04 19:12:25 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *font, int c, size_t num);
-
-void	*ft_memset(void *font, int c, size_t num)
+void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned int	ctrl;
 	unsigned char	*str;
 
 	ctrl = 0;
-	str = font;
-	while (ctrl < num)
+	str = s;
+	while (ctrl < n)
 	{
 		str[ctrl] = c;
 		ctrl++;
 	}
-	return (font);
+	return (s);
 }
 /*
 #include <stdio.h>

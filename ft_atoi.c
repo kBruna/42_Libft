@@ -6,11 +6,9 @@
 /*   By: buehara <buehara@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 19:00:36 by buehara           #+#    #+#             */
-/*   Updated: 2025/08/01 15:34:21 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/04 18:53:51 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-int	ft_atoi(const char *nptr);
 
 int	ft_atoi(const char *nptr)
 {

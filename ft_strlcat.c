@@ -6,13 +6,11 @@
 /*   By: buehara <buehara@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 13:01:23 by buehara           #+#    #+#             */
-/*   Updated: 2025/07/24 17:43:49 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/04 19:05:49 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-size_t	ft_strlcat(char *dst, const char *src, size_t size);
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {

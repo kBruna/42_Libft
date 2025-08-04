@@ -6,15 +6,11 @@
 /*   By: buehara <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 20:14:13 by buehara           #+#    #+#             */
-/*   Updated: 2025/07/19 12:48:26 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/04 18:55:53 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(int c);
-
-int	ft_isalpha(int c);
-
-int	ft_isdigit(int c);
+#include "libft.h"
 
 int	ft_isalnum(int c)
 {

@@ -6,13 +6,11 @@
 /*   By: buehara <buehara@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 14:26:09 by buehara           #+#    #+#             */
-/*   Updated: 2025/07/25 15:43:27 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/04 18:57:51 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-int	ft_memcmp(const void *s1, const void *s2, size_t n);
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

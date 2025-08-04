@@ -6,13 +6,11 @@
 /*   By: buehara <buehara@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/27 19:37:29 by buehara           #+#    #+#             */
-/*   Updated: 2025/08/01 15:20:14 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/04 19:06:33 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char	*ft_strdup(const char *s);
 
 char	*ft_strdup(const char *s)
 {

@@ -6,7 +6,7 @@
 /*   By: buehara <buehara@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 13:46:50 by buehara           #+#    #+#             */
-/*   Updated: 2025/08/01 13:52:03 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/04 18:52:02 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	ft_putstr_fd(s, fd);
-	ft_putchar_fd('\n', fd);
+	while (*s)
+		write(fd, s++, 1);
+	write(fd, "\n", 1);
 }

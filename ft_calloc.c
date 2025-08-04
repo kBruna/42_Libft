@@ -6,13 +6,11 @@
 /*   By: buehara <buehara@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/27 15:27:46 by buehara           #+#    #+#             */
-/*   Updated: 2025/07/27 19:19:05 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/04 18:54:55 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-void	*ft_calloc(size_t nmemb, size_t size);
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {

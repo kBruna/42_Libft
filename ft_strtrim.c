@@ -6,13 +6,11 @@
 /*   By: buehara <buehara@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 20:50:21 by buehara           #+#    #+#             */
-/*   Updated: 2025/08/01 15:02:00 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/04 19:08:50 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char	*ft_strtrim(char const *s1, char const *set);
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

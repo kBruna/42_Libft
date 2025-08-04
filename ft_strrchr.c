@@ -6,13 +6,11 @@
 /*   By: buehara <buehara@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 19:03:27 by buehara           #+#    #+#             */
-/*   Updated: 2025/07/24 19:44:27 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/04 19:08:33 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char	*ft_strrchr(const char *s, int c);
 
 char	*ft_strrchr(const char *s, int c)
 {

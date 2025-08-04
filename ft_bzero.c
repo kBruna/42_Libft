@@ -6,13 +6,11 @@
 /*   By: buehara <buehara@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/20 13:23:04 by buehara           #+#    #+#             */
-/*   Updated: 2025/07/22 18:24:11 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/04 18:53:00 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-void	ft_bzero(void *s, size_t n);
 
 void	ft_bzero(void *s, size_t n)
 {

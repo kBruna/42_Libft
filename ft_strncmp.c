@@ -6,13 +6,11 @@
 /*   By: buehara <buehara@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 20:39:30 by buehara           #+#    #+#             */
-/*   Updated: 2025/08/01 15:32:50 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/04 19:08:16 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-int	ft_strncmp(const char *s1, const char *s2, size_t n);
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

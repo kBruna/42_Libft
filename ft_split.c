@@ -6,15 +6,11 @@
 /*   By: buehara <buehara@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/30 12:25:04 by buehara           #+#    #+#             */
-/*   Updated: 2025/07/31 16:02:12 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/04 19:01:38 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char					**ft_split(char const *s, char c);
-
-static int				ft_count_words(const char *s, char c);
 
 static int	ft_count_words(const char *s, char c)
 {
@@ -117,7 +113,6 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (ptr);
 }
-
 /*
 #include <stdio.h>
 int	main(void)

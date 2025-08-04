@@ -6,11 +6,9 @@
 /*   By: buehara <buehara@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 17:59:30 by buehara           #+#    #+#             */
-/*   Updated: 2025/07/24 18:52:28 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/04 19:01:54 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-char	*ft_strchr(const char *s, int c);
 
 char	*ft_strchr(const char *s, int c)
 {
