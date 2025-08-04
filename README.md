@@ -136,8 +136,8 @@ typedef struct	s_list
 - [x] ft_lstlast - Test OK
 - [x] `ft_lstadd_back` - Test OK
 - [x] ft_lstdelone - Test OK
-- [x] ft_lstclear
-- [ ] ft_lstiter
+- [x] ft_lstclear - Test OK
+- [x] ft_lstiter - Test OK
 - [ ] ft_lstmap
 
 === Testes ===

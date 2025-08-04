@@ -6,7 +6,7 @@
 #    By: buehara <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/17 12:44:47 by buehara           #+#    #+#              #
-#    Updated: 2025/08/02 18:29:00 by buehara          ###   ########.fr        #
+#    Updated: 2025/08/02 19:32:26 by buehara          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -59,7 +59,8 @@ C_BONUS = 	ft_lstnew_bonus.c		\
 			ft_lstadd_back_bonus.c	\
 			ft_lstdelone_bonus.c	\
 			ft_lstclear_bonus.c		\
-			ft_lstiter_bonus.c
+			ft_lstiter_bonus.c		\
+			ft_lstmap_bonus.c
 
 OBJ = $(C_SOURCE:.c=.o)
 
