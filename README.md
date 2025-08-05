@@ -558,4 +558,524 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 	
 -----------------------------------
 
+	#include <stdio.h>
+	int main(void)
+	{
+	    int in1 = 0;
+	    int in2 = 987654321;
+	    int in3 = -34567890;
+
+	    printf("Return: %s\n", ft_itoa(in1));
+	    printf("Return: %s\n", ft_itoa(in2));
+	    printf("Return: %s\n", ft_itoa(in3));
+
+	    return (0);
+	}
+	
+--------------------------------
+
+	#include <stdio.h>
+	#include <string.h>
+	int     main(void)
+	{
+	    int    str_orig1[] = {1,2,3,4,5,6,7,8,9};
+	    int    str_orig2[] = {10,11,12,13,14,0,15,16};
+
+	    int    str_cp1_dest1[100];
+	    int    str_cp1_dest2[100];
+	    int    str_cp2_dest1[100];
+	    int    str_cp2_dest2[100];
+
+	    int size_len1 = 9;
+	    int size_len2 = 8;
+
+	    memcpy(&str_cp1_dest1, &str_orig1, sizeof(int) * 3);
+	    memcpy(&str_cp1_dest2, &str_orig2, sizeof(int) * 4);
+	    ft_memcpy(&str_cp2_dest1, &str_orig1, sizeof(int) * 3);
+	    ft_memcpy(&str_cp2_dest2, &str_orig2, sizeof(int) * 4);
+
+	    printf("\nOriginal String:\n\tString 01:\n");
+	    for (int i = 0; i < size_len1; i++)
+		printf("str[%d] = %d\n", i, str_orig1[i]);
+	    printf("\n\tString 02:\n");
+	    for (int i = 0; i < size_len2; i++)
+		printf("str[%d] = %d\n", i, str_orig2[i]);
+	    printf("\nOriginal Function:\n\tString 01:\n");
+	    for (int i = 0; i < size_len1; i++)
+		printf("str[%d] = %d\n", i, str_cp1_dest1[i]);
+	    printf("\n\tString 02:\n");
+	    for (int i = 0; i < size_len2; i++)
+		printf("str[%d] = %d\n", i, str_cp1_dest2[i]);
+	    printf("\nMy_Function:\n\tString 01:\n");
+	    for (int i = 0; i < size_len1; i++)
+		printf("str[%d] = %d\n", i, str_cp2_dest1[i]);
+	    printf("\n\tString 02:\n");
+	    for (int i = 0; i < size_len2; i++)
+		printf("str[%d] = %d\n", i, str_cp2_dest2[i]);
+	    return (0);
+	}
+	
+-----------------------------------
+
+	#include <stddef.h>
+	#include <stdio.h>
+	#include <string.h>
+	#include <bsd/string.h>
+
+	int     main(void)
+	{
+		char    str_orig1[] = "ABC";
+		char    str_orig2[] = "Hello []$^&*()_+{}| World!";
+
+		char    str_cp1_dest1[100];
+		char    str_cp1_dest2[100];
+		char    str_cp2_dest1[100];
+		char    str_cp2_dest2[100];
+
+		memmove(str_cp1_dest1, str_orig1, sizeof(char) * 3);
+		memmove(&str_orig2[0], &str_orig2[6], sizeof(char) * 5);
+		ft_memmove(str_cp2_dest1, str_orig1, sizeof(char) * 3);
+		ft_memmove(&str_orig2[0], &str_orig2[6], sizeof(char) * 5);
+
+		printf("\nOriginal Function:\n\tString 01: %s\n\tString 02: 
+	%s\n", str_cp1_dest1, str_cp1_dest2);
+		printf("\n\nMy function:\n\tString 01: %s\n\tString 02: 
+	%s\n\n", str_cp2_dest1, str_cp2_dest2);
+		return (0);
+	}
+
+-----------------------------------
+
+	#include <stdio.h>
+	#include <string.h>
+	int main(void)
+	{
+	    int n = 5;
+	    char    c = 'a';
+	    char    str1[] = "Test of the ft_memset function.";
+	    char    str2[] = "Test of the ft_memset function.";
+	    char    str3[] = "Test of the ft_memset function.";
+
+	    ft_memset(str2, c, n);
+	    memset(str3, c, n);
+	    
+	    printf("\nOriginal string:\n\t%s", str1);
+	    printf("\nReturn original function: \n\t%s", str2);
+	    printf("\nReturn my_funcion: \n\t%s\n", str3);
+
+	    return (0);
+	}
+
+------------------------------------
+
+	#include <stdio.h>
+	int main(void)
+	{
+	    char    *str = "-----Hello-World!---alo";
+	    char    **strstr;
+	    char    z = '-';
+	    size_t  ctrl = 0;
+
+	    strstr = ft_split(str, z);
+	    while(strstr[ctrl] != NULL)
+	    {
+		printf("string %ld: %s\n", ctrl, strstr[ctrl]);
+		ctrl++;
+	    }
+	    ctrl = 0;
+	    return (0);
+	}
+
+------------------------------------
+
+	#include <stdio.h>
+	#include <string.h>
+	int main(void)
+	{
+	    char    *str = "Hello World!";
+	    char    c = 'l';
+
+	    printf("\nOriginal Function: \t%s", strchr(str, c + 256));
+	    printf("\nMy function: \t\t%s\n", ft_strchr(str, c + 256));
+
+	    return (0);
+	}
+
+------------------------------------
+
+	#include <stdio.h>
+	#include <bsd/string.h>
+	int main(void)
+	{
+	    char    *str1 = "Hello World!";
+	    char    *str2 = "";
+	    char    *str3 = "Put a long string here";
+
+	    char    *ptr_og1 = strdup(str1);
+	    char    *ptr_og2 = strdup(str2);
+	    char    *ptr_og3 = strdup(str3);
+	    char    *ptr_ft1 = ft_strdup(str1);
+	    char    *ptr_ft2 = ft_strdup(str2);
+	    char    *ptr_ft3 = ft_strdup(str3);
+
+	    printf("Original Function: str1 =  %s\n", ptr_og1);
+	    printf("Original Function: str1 address = %p\n", (void *)&str1);
+	    printf("Original Function: str1 copy address = %p\n\n", (void *)&ptr_og1);
+	    printf("Original Function: str2 =  %s\n", ptr_og2);
+	    printf("Original Function: str2 address =  %p\n", (void *)&str2);
+	    printf("Original Function: str2 copy address =  %p\n\n", (void *)&ptr_og2);
+	    printf("Original Function: str3 =  %s\n", ptr_og3);
+	    printf("My function: str1 = \t%s\n", ptr_ft1);
+	    printf("My function: str1 address = \t%p\n\n", (void *)ptr_ft1);
+	    printf("My function: str2 = \t%s\n", ptr_ft2);
+	    printf("My function: str2 address = \t%p\n\n", (void *)&ptr_ft2);
+	    printf("My function: str3 = \t%s\n", ptr_ft3);
+
+	    free(ptr_og1);
+	    free(ptr_og2);
+	    free(ptr_og3);
+	    free(ptr_ft1);
+	    free(ptr_ft2);
+	    free(ptr_ft3);
+	    return (0);
+	}
+
+-----------------------------------
+
+	#include <stdio.h>
+	void    test_func(unsigned int i, char *c) 
+	{
+	    *c += i;
+	}
+
+	int main(void)
+	{
+	    char    *str1 = "0000000000";
+	    char    *str2 = "1111111111";
+
+	    ft_striteri(str1, test_func);
+	    ft_striteri(str2, test_func);
+
+	    printf("STR 1 : %s", str1);
+	    printf("STR 2 : %s", str2);
+	    return (0);
+	}
+
+-------------------------------------
+
+	#include <stdio.h>
+	int main(void)
+	{
+	    char    *str1 = "Helloo0o0o0o0";
+	    char    *str2 = "-World!!!!!!!!!";
+	    char    *str3;
+
+	    str3 = ft_strjoin(str1, str2);
+	    printf("Final String: %s\n", str3);
+	    
+	    return (0);
+	}
+
+-------------------------------------
+
+	#include <bsd/string.h>
+	#include <stdio.h>
+	int main(void)
+	{
+	    char    *org = "This-is-the-original string.";
+	    char    dest1[50] = "Hello World!";
+	    char    dest2[50] = "Hello World!";
+
+	    int int_org = strlcat(dest1, org, 40);
+	    int int_myft = ft_strlcat(dest2, org, 40);
+
+	    printf("\nOriginal str: %s\n", org);
+	    printf("\nStrlcat: %s\n\tReturn: %d\n", dest1, int_org);
+	    printf("\nft_strlcat: %s\n\tReturn: %d\n", dest2, int_myft);
+
+	    return (0);
+	}
+
+---------------------------------------
+
+#include <stdio.h>
+#include <string.h>
+#include <bsd/string.h>
+int ft_strlen(char *str);
+
+int ft_strlen(char *str)
+{
+    int i;
+    int len;
+
+    while (str[i] != '\0')
+    {
+        len++;
+        i++;
+    }
+    return (len);
+}
+
+int main(void)
+{
+    char    str_orig1[] = "ABC";
+    char    str_orig2[] = "Hello []$^&*()_+{}| World!";
+
+    char    str_cp1_dest1[100];
+    char    str_cp1_dest2[100];
+    char    str_cp2_dest1[100];
+    char    str_cp2_dest2[100];
+
+    unsigned int    orig_1 = strlcpy(str_cp1_dest1, str_orig1, 2);
+    unsigned int    orig_2 = strlcpy(str_cp1_dest2, str_orig2, 10);
+    unsigned int    myfunc_1 = ft_strlcpy(str_cp2_dest1, str_orig1, 2);
+    unsigned int    myfunc_2 = ft_strlcpy(str_cp2_dest2, str_orig2, 10);
+
+    printf("\nOriginal Function:\n\tString 01: %s\t\tReturn : %d 
+\n\tString 02: %s\t\tReturn : %d", str_cp1_dest1, orig_1, str_cp1_dest2, orig_2);
+    printf("\n\nMy function:\n\tString 01: %s \t\tReturn : %d\n\tString 02: 
+%s\t\tReturn : %d\n", str_cp2_dest1, myfunc_1, str_cp2_dest2, myfunc_2);
+    return (0);
+}
+
+-------------------------------------------
+
+	#include <stdlib.h>
+	#include <stdio.h>
+	int main(int argc, char **argv)
+	{
+	    if (argc > 0)
+	    {
+		printf("Strlen = %d", ft_strlen(argv[1]));
+	    }
+	    return (0);
+	}
+
+-------------------------------------------
+
+	#include <stdio.h>
+	char    test_func(unsigned int i, char c) 
+	{
+	    if (i % 2 == 0 && c >= 'a' && c <= 'z')
+		return c - 32;  // uppercase for even indexes
+	    return c;           // leave other characters unchanged
+	}
+
+
+	int main(void)
+	{
+	    char    *str1 = "this is a lowercase string";
+	    char    *str2 = "THIS IS A UPPERCASE STRING!";
+
+	    printf("STR 1 : %s", ft_strmapi(str1, test_func));
+	    printf("STR 2 : %s", ft_strmapi(str2, test_func));
+	    return (0);
+	}
+
+---------------------------------------------
+
+	#include <stdio.h>
+	#include <string.h>
+	int main(void)
+	{
+	    char    *str1 = "Hello World!";
+	    char    *str2 = "Hello Wor1ld!";
+	    int index = 50;
+
+	    printf("Original Function: \t%d\n", strncmp(str1, str2, index));
+	    printf("\n\tMy Function: \t%d\n", ft_strncmp(str1, str2, index));
+
+	    return (0);
+	}
+
+---------------------------------------------
+
+	#include <stdio.h>
+	#include <bsd/string.h>
+
+	int main(void)
+	{
+	    char    *org = "";
+	    char    *find = "";
+	    int n = 7;
+
+	    printf("Original function: \t%s\n", strnstr(org, find, n));
+	    printf("\tMy Function: \t%s\n", ft_strnstr(org, find, n));
+
+	    return (0);
+	}
+
+---------------------------------------------
+
+#include <stdio.h>
+#include <string.h>
+int main(void)
+{
+    char  *str = "Hello World!";
+   char  c = 'l';
+
+   printf("\nOriginal Function: \t%s", strrchr(str, c + 256));
+   printf("\nMy function: \t\t%s\n", ft_strrchr(str, c + 256));
+
+   return (0);
+}
+
+---------------------------------------------
+
+	#include <stdio.h>
+	int main(void)
+	{
+	    char    *str1 = "This is a test string!";
+	    char    *str2 = "Hello World!";
+	    char    *ret1;
+	    char    *ret2;
+	    char    *ret3;
+	    char    *ret4;
+	    char    *ret5;
+	    char    *ret6;
+	    char    *ret7;
+
+	    ret1 = ft_substr(str1, 10, 12);
+	    ret2 = ft_substr(str2, 0, 12);
+	    ret3 = ft_substr(str1, -1, 5);
+	    ret4 = ft_substr(str2, 0, 0);
+	    ret5 = ft_substr("", 0, 5);
+	    ret6 = ft_substr(str1, 24, 1);
+	    ret7 = ft_substr(str1, 0, -1);
+
+	    printf("ft_substr: ");
+	    printf("1 %s |", (ret1[0] == '\0') ? "KO" : ret1);
+	    printf("2 %s |", (ret2[0] == '\0') ? "KO" : ret2);
+	    printf("3 %s |", (ret3 == NULL) ? "OK" : ret3);
+	    printf("4 %s |", (ret4 == NULL) ? "OK" : ret4);
+	    printf("5 %s |", (ret5 == NULL) ? "OK" : ret5);
+	    printf("6 %s |", (ret6 == NULL) ? "OK" : ret6);
+	    printf("7 %s", (ret7 == NULL) ? "OK" : ret7);
+	    printf("\n");
+
+	    free(ret1);
+	    free(ret2);
+	    free(ret3);
+	    free(ret4);
+	    free(ret5);
+	    free(ret6);
+	    free(ret7);
+	    return (0);
+	}
+
+----------------------------------------------
+
+	#include <ctype.h>
+	#include <stdio.h>
+	int     main(void)
+	{
+		char    test1 = '0';
+		char    test2 = '9';
+		char    test3 = 'a';
+		char    test4 = 'A';
+		char    test5 = '!';
+		char    test6 = '#';
+
+		char    *test[6] = { &test1, &test2, &test3, &test4, &test5, &test6 };
+
+		int     var_origin1;
+		int     var_origin2;
+		int     var_origin3;
+		int     var_origin4;
+		int     var_origin5;
+		int     var_origin6;
+
+		int     *var_origin[6] = { &var_origin1, &var_origin2, &var_origin3,
+		&var_origin4, &var_origin5, &var_origin6 };
+
+		int     var_my_function1;
+		int     var_my_function2;
+		int     var_my_function3;
+		int     var_my_function4;
+		int     var_my_function5;
+		int     var_my_function6;
+
+		int     *var_my_func[6] = { &var_my_function1, &var_my_function2, 
+	    &var_my_function3, &var_my_function4, &var_my_function5, &var_my_function6 };
+		for (int i = 0; i <= 5; i++)
+		{
+		        *(var_origin[i]) = tolower(*(test[i]));
+		        *(var_my_func[i]) = ft_tolower(*(test[i]));
+		}
+
+		printf("Teste 1 Valor [%c] :\n\tOriginal: %c", test1, var_origin1);
+		printf("\n\tft_my_function: %c\n\n", var_my_function1);
+		printf("Teste 2 Valor [%c] :\n\tOriginal: %c", test2, var_origin2);
+		printf("\n\tft_my_function: %c\n\n", var_my_function2);
+		printf("Teste 3 Valor [%c] :\n\tOriginal: %c", test3, var_origin3);
+		printf("\n\tft_my_function: %c\n\n", var_my_function3);
+		printf("Teste 4 Valor [%c] :\n\tOriginal: %c", test4, var_origin4);
+		printf("\n\tft_my_function: %c\n\n", var_my_function4);
+		printf("Teste 5 Valor [%c] :\n\tOriginal: %c", test5, var_origin5);
+		printf("\n\tft_my_function: %c\n\n", var_my_function5);
+		printf("Teste 6 Valor [%c] :\n\tOriginal: %c", test6, var_origin6);
+		printf("\n\tft_my_function: %c\n\n", var_my_function6);
+
+		return (0);
+	}
+
+------------------------------------------
+
+	#include <ctype.h>
+	#include <stdio.h>
+	int     main(void)
+	{
+		char    test1 = '0';
+		char    test2 = '9';
+		char    test3 = 'a';
+		char    test4 = '=';
+		char    test5 = '!';
+		char    test6 = '#';
+
+	    char    *test[6] = { &test1, &test2, &test3, &test4, &test5, &test6 };
+
+		int var_origin1;
+		int var_origin2;
+		int var_origin3;
+		int var_origin4;
+		int var_origin5;
+		int var_origin6;
+
+	    int *var_origin[6] = { &var_origin1, &var_origin2, &var_origin3, 
+	    &var_origin4, &var_origin5, &var_origin6 };
+	    
+		int var_my_function1;
+		int var_my_function2;
+		int var_my_function3;
+		int var_my_function4;
+		int var_my_function5;
+		int var_my_function6;
+
+	    int *var_my_func[6] = { &var_my_function1, &var_my_function2, 
+	    &var_my_function3, &var_my_function4, &var_my_function5, &var_my_function6 };
+
+	    for (int i = 0; i <= 5; i++)
+	    {
+		*(var_origin[i]) = toupper(*(test[i]));
+		*(var_my_func[i]) = ft_toupper(*(test[i]));
+	    }
+
+	    printf("Teste 1 Valor [%c] :\n\tOriginal: %c", test1, var_origin1);
+		printf("\n\tft_my_function: %c\n\n", var_my_function1);
+		printf("Teste 2 Valor [%c] :\n\tOriginal: %c", test2, var_origin2);
+		printf("\n\tft_my_function: %c\n\n", var_my_function2);
+		printf("Teste 3 Valor [%c] :\n\tOriginal: %c", test3, var_origin3);
+		printf("\n\tft_my_function: %c\n\n", var_my_function3);
+		printf("Teste 4 Valor [%c] :\n\tOriginal: %c", test4, var_origin4);
+		printf("\n\tft_my_function: %c\n\n", var_my_function4);
+		printf("Teste 5 Valor [%c] :\n\tOriginal: %c", test5, var_origin5);
+		printf("\n\tft_my_function: %c\n\n", var_my_function5);
+		printf("Teste 6 Valor [%c] :\n\tOriginal: %c", test6, var_origin6);
+		printf("\n\tft_my_function: %c\n\n", var_my_function6);
+
+		return (0);
+	}
+
+----------------------------------
+
 

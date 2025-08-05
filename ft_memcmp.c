@@ -6,7 +6,7 @@
 /*   By: buehara <buehara@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 14:26:09 by buehara           #+#    #+#             */
-/*   Updated: 2025/08/04 18:57:51 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/05 17:48:49 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,20 +31,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-int	main(void)
-{
-	char	str1[] = {0, 0, 127, 0};
-	char	str2[] = {0, 0, 127, 0};
-	char	str3[] = {0, 0, 42, 0};
-	size_t	i = 2;
-
-	printf("Original function (array 0): \t%d\n", memcmp(str1, str2, i));
-	printf("Original function: \t%d\n", memcmp(str1, str3, i));
-	printf("\nMy function (array 0): \t%d\n", ft_memcmp(str1, str2, i));
-	printf("My function: \t%d\n", ft_memcmp(str1, str3, i));
-
-	return (0);
-}*/

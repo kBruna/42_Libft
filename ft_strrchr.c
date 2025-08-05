@@ -6,7 +6,7 @@
 /*   By: buehara <buehara@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 19:03:27 by buehara           #+#    #+#             */
-/*   Updated: 2025/08/04 19:08:33 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/05 18:40:02 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,16 +25,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (0);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-int	main(void)
-{
-	char  *str = "Hello World!";
-   char  c = 'l';
-
-   printf("\nOriginal Function: \t%s", strrchr(str, c + 256));
-   printf("\nMy function: \t\t%s\n", ft_strrchr(str, c + 256));
-
-   return (0);
-}*/

@@ -6,7 +6,7 @@
 /*   By: buehara <buehara@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 19:59:31 by buehara           #+#    #+#             */
-/*   Updated: 2025/08/04 19:07:17 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/05 18:27:31 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,16 +23,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcat(ptr, s2, (ft_strlen(s1) + ft_strlen(s2) + 1));
 	return (ptr);
 }
-/*
-#include <stdio.h>
-int	main(void)
-{
-	char	*str1 = "Helloo0o0o0o0";
-	char	*str2 = "-World!!!!!!!!!";
-	char	*str3;
-
-	str3 = ft_strjoin(str1, str2);
-	printf("Final String: %s\n", str3);
-	
-	return (0);
-}*/

@@ -6,7 +6,7 @@
 /*   By: buehara <buehara@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 21:10:30 by buehara           #+#    #+#             */
-/*   Updated: 2025/08/04 18:57:30 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/05 17:47:32 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,17 +29,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-/*
-#include <string.h>
-#include <stdio.h>
-int	main(void)
-{
-	char *str = "Searching for something in this string!";
-	size_t	size = 10;
-	char	c = 'g';
-
-	printf("Original Function: \t%s", (char *)memchr(str, c, size));
-	printf("\n\tMy function: \t%s", (char *)ft_memchr(str, c, size));
-
-	return (0);
-}*/

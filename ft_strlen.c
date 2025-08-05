@@ -6,7 +6,7 @@
 /*   By: buehara <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 13:11:12 by buehara           #+#    #+#             */
-/*   Updated: 2025/08/04 19:02:20 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/05 18:29:14 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,15 +24,3 @@ size_t	ft_strlen(const char *s)
 	}
 	return (count);
 }
-
-/*
-#include <stdlib.h>
-#include <stdio.h>
-int	main(int argc, char **argv)
-{
-	if (argc > 0)
-	{
-		printf("Strlen = %d", ft_strlen(argv[1]));
-	}
-	return (0);
-}*/

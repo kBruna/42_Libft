@@ -6,7 +6,7 @@
 /*   By: buehara <buehara@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 13:01:23 by buehara           #+#    #+#             */
-/*   Updated: 2025/08/04 19:05:49 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/05 18:28:10 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,21 +39,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	}
 	return (index_src);
 }
-/*
-#include <bsd/string.h>
-#include <stdio.h>
-int	main(void)
-{
-	char	*org = "This-is-the-original string.";
-	char	dest1[50] = "Hello World!";
-	char	dest2[50] = "Hello World!";
-
-	int	int_org = strlcat(dest1, org, 40);
-	int	int_myft = ft_strlcat(dest2, org, 40);
-
-	printf("\nOriginal str: %s\n", org);
-	printf("\nStrlcat: %s\n\tReturn: %d\n", dest1, int_org);
-	printf("\nft_strlcat: %s\n\tReturn: %d\n", dest2, int_myft);
-
-	return (0);
-}*/

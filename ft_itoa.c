@@ -6,7 +6,7 @@
 /*   By: buehara <buehara@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/31 16:59:31 by buehara           #+#    #+#             */
-/*   Updated: 2025/07/31 19:23:51 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/05 17:45:31 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,17 +64,3 @@ char	*ft_itoa(int n)
 		digit[0] = '-';
 	return (digit);
 }
-/*
-#include <stdio.h>
-int	main(void)
-{
-	int	in1 = 0;
-	int in2 = 987654321;
-	int in3 = -34567890;
-
-	printf("Return: %s\n", ft_itoa(in1));
-	printf("Return: %s\n", ft_itoa(in2));
-	printf("Return: %s\n", ft_itoa(in3));
-
-	return (0);
-}*/
