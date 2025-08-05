@@ -6,7 +6,7 @@
 /*   By: buehara <buehara@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/02 16:10:26 by buehara           #+#    #+#             */
-/*   Updated: 2025/08/02 18:08:27 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/05 15:42:00 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,4 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 		ft_lstdelone(*lst, del);
 		*lst = last;
 	}
-	lst = NULL;
 }

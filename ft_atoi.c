@@ -6,7 +6,7 @@
 /*   By: buehara <buehara@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 19:00:36 by buehara           #+#    #+#             */
-/*   Updated: 2025/08/04 18:53:51 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/05 15:18:42 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,18 +37,3 @@ int	ft_atoi(const char *nptr)
 	}
 	return (0);
 }
-/*
-#include <stdio.h>
-#include <stdlib.h>
-int	main(void)
-{
-	char	*str1 = "+42lyon1";
-	char	*str2 = "+1";
-	char	*str3 = "-1";
-
-	printf("Original function: \t%d\t%d\t%d\n", atoi(str1), 
-atoi(str2), atoi(str3));
-	printf("My function: \t\t%d\t%d\t%d\n", ft_atoi(str1), 
-ft_atoi(str2), ft_atoi(str3));
-	return (0);
-}*/

@@ -6,7 +6,7 @@
 #    By: buehara <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/17 12:44:47 by buehara           #+#    #+#              #
-#    Updated: 2025/08/05 14:58:35 by buehara          ###   ########.fr        #
+#    Updated: 2025/08/05 15:56:19 by buehara          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,6 @@ CFLAGS = -Wall -Werror -Wextra
 AR = ar
 RCS = rcs
 CC = cc
-HDRS = libft.h
 C_SOURCE = 	ft_atoi.c		\
 			ft_bzero.c		\
 			ft_calloc.c		\
@@ -72,7 +71,7 @@ $(NAME) : $(OBJ)
 	$(AR) $(RCS) $(NAME) $(OBJ)
 
 %.o : %.c
-	$(CC) $(CFLAGS) -I.$(HDRS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 bonus : 
 	$(MAKE) OBJ="$(OBJ) $(OBJ_BONUS)"
