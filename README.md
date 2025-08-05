@@ -2,9 +2,9 @@
 
 ## 42's Common Core Libft
 
-### Functions List #<ctype.h>
+### Basic Functions List #<ctype.h>
 
-- [x] ft_atoi - Test OK
+- [x] `ft_atoi` - Test OK
 
 	int	ft_atoi(const char *nptr);
 
@@ -14,7 +14,7 @@ Return value: Converted Value or 0 on error.
 
 
 
-- [x] ft_bzero - Test OK
+- [x] `ft_bzero` - Test OK
 
 	void	ft_bzero(void *s, size_t n);
 
@@ -24,7 +24,7 @@ Return value: None.
 
 
 
-- [x] ft_isalnum - Test OK
+- [x] `ft_isalnum` - Test OK
 
 	int	ft_isalnum(int c);
 
@@ -32,7 +32,7 @@ Checks for an alphabetic character; it is equivalent to (isalpha(c) || isdigit(c
 
 
 
-- [x] ft_isalpha - Test OK
+- [x] `ft_isalpha` - Test OK
 
 	int	ft_isalpha(int c);
 
@@ -40,7 +40,7 @@ Checks for an alphabetic character; in the standard "C" locale, it is equivalent
 
 
 
-- [x] ft_isascii - Test OK
+- [x] `ft_isascii` - Test OK
 
 	int	ft_isascii(int c);
 
@@ -48,7 +48,7 @@ Checks whether c is a 7-bit unsigned char value that fits into the ASCII charact
 
 
 
-- [x] ft_isdigit - Test OK
+- [x] `ft_isdigit` - Test OK
 
 	int	ft_isdigit(int c);
 
@@ -56,7 +56,7 @@ Checks for a digit (0 through 9).
 
 
 
-- [x] ft_isprint - Test OK
+- [x] `ft_isprint` - Test OK
 
 	int	ft_isprint(int c);
 	
@@ -64,7 +64,7 @@ Checks for any printable character except space.
 
 
 
-- [x] ft_memcpy - Test OK
+- [x] `ft_memcpy` - Test OK
 
 	void	*ft_memcpy(void *dest, const void *src, size_t n);
 
@@ -74,7 +74,7 @@ Return value: Pointer to dest.
 
 
 
-- [x] ft_memchr - Test OK
+- [x] `ft_memchr` - Test OK
 
 	void	*ft_memchr(const void *s, int c, size_t n);
 
@@ -84,7 +84,7 @@ Return value: Pointer to matching type to the matching byte or NULL of the chara
 
 
 
-- [x] ft_memcmp - Test OK
+- [x] `ft_memcmp` - Test OK
 
 	int	ft_memcmp(const void *s1, const void *s2, size_t n);
 
@@ -94,7 +94,7 @@ Return value: Function returns an integer less than, equal to, or than greater z
 
 
 
-- [x] ft_memmove - Test OK
+- [x] `ft_memmove` - Test OK
 
 	void	ft_memmove(void *dest, const void *src, size_t n);
 
@@ -104,7 +104,7 @@ Return value: Function returns a pointer to dest.
 
 
 
-- [x] ft_memset - Test OK
+- [x] `ft_memset` - Test OK
 
 	void	ft_memset(void *s, int c, size_t n);
 
@@ -114,7 +114,7 @@ Return value: Function returns a pointer to memory area s.
 
 
 
-- [x] ft_strlen - Test OK
+- [x] `ft_strlen` - Test OK
 
 	size_t	ft_strlen(const char *s);
 
@@ -124,7 +124,7 @@ Return value: Function returns the number of bytes in the string pointed to by s
 
 
 
-- [x] ft_strlcpy - Test OK
+- [x] `ft_strlcpy` - Test OK
 
 	size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 	
@@ -134,16 +134,17 @@ Return value: The length of src (size_t).
 
 
 
-- [x] ft_strlcat - Test OK
+- [x] `ft_strlcat` - Test OK
 
 	size_t	ft_strlcat(char *dst, const char *src, size_t size);
 
 Function appends the NUL-terminated string src to the end of dst. Will append at most size - strlen(dst) - 1 bytes. Guarantee to NUL-terminate the result (as long as size is larger than 0 and as long as there is at least one byte free is dst). Note that a byte for the NUL should be included in size. Only operates on true "C" strings. That means that both src and dst must be NUL-terminated.
+
 Return values: For sucessful concatenation: size_t src + dst.
 
 
 
-- [x] ft_strchr - Test OK
+- [x] `ft_strchr` - Test OK
 
 	char	*ft_strchr(const char *s, int c);
 
@@ -152,25 +153,27 @@ Return value: Pointer to the matched character or NULL if the character is not f
 
 
 
-- [x] ft_strncmp - Test OK
+- [x] `ft_strncmp` - Test OK
 
 	int	ft_strncmp(const char *s1, const char *s2, size_t n);
 
 Function compares the first (at most) n bytes of s1 and s2. The locale is not taken into account. The comparison is done using unsigned characters.
+
 Return value: Function return an integer less than, equal to, or greater than zero if s1 (or the first n bytes thereof) is found, respectively, to be less than, to match, or be greater than s2.
 
 
 
-- [x] ft_strnstr - Test OK
+- [x] `ft_strnstr` - Test OK
 
 	char	*ft_strnstr(const char *big, const char *little, size_t len);
 	
 Function locates the first occurrence of the null-terminated string little in the string big, where not more than len characters are searched. Characters that appear after a '\0' character are not searched.
+
 Return value: If little is an empty string, big is returned; if little occurs nowhere in big, NULL is returned; otherwise a pointer to the first character of the first occurrence of little is returned.
 
 
 
-- [x] ft_strrchr - Test OK
+- [x] `ft_strrchr` - Test OK
 
 	char	*ft_strrchr(const char *s, int c);
 	
@@ -179,7 +182,7 @@ Return Values: Pointer to the matched character or NULL if the character is not 
 
 
 
-- [x] ft_tolower - Test OK
+- [x] `ft_tolower` - Test OK
 
 	int	ft_tolower(int c);
 	
@@ -187,7 +190,7 @@ If c is an uppercase letter, returns its lowercase equivalent, if a lowercase re
 
 
 
-- [x] ft_toupper - Test OK
+- [x] `ft_toupper` - Test OK
 
 	int	ft_toupper(int c);
 
@@ -195,8 +198,9 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 
 
 
- - with malloc()
-[x] ft_calloc - Test OK
+#### with malloc()
+
+ - [x] `ft_calloc` - Test OK
 
 	void	*ft_calloc(size_t nmemb, size_t size);
 
@@ -204,13 +208,16 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 
 
 
-[x] ft_strdup; - Test OK
+ - [x] `ft_strdup` - Test OK
 
 	char	ft_strdub(const char *s);
 
 - strlcpy, strlcat, bzero -> #include <bsd/string.h> -> cc -lbsd
 
+
+
 ### Extra Functions
+
 
 - [x] `ft_itoa` - Test OK
 
@@ -276,7 +283,7 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 	}		t_list;
 
 
-- [x] ft_lstnew - Test OK
+- [x] `ft_lstnew` - Test OK
 
 	t_list	*ft_lstnew(void *content);
 
@@ -286,12 +293,12 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 	void	ft_lstadd_front(t_list **lst, t_list *new);
 
 
-- [x] ft_lstsize - Test OK
+- [x] `ft_lstsize` - Test OK
 
 	int	ft_lstsize(t_list *lst);
 
 
-- [x] ft_lstlast - Test OK
+- [x] `ft_lstlast` - Test OK
 
 	t_list	*ft_lstlast(t_list *lst);
 
@@ -301,22 +308,22 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 	void	ft_lstadd_back(t_list **lst, t_list new);
 
 
-- [x] ft_lstdelone - Test OK
+- [x] `ft_lstdelone` - Test OK
 
 	void	ft_delone(t_list *lst, void (*del)(void *));
 
 
-- [x] ft_lstclear - Test OK
+- [x] `ft_lstclear` - Test OK
 
 	void	ft_lstclear(t_list **lst, void (*f)(void *));
 
 
-- [x] ft_lstiter - Test OK
+- [x] `ft_lstiter` - Test OK
 
 	void	ft_lstiter(t_list *lst, void (*f)(void *));
 
 
-- [x] ft_lstmap - Test OK
+- [x] `ft_lstmap` - Test OK
 
 	t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
@@ -368,7 +375,7 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 	        return (0);
 	}
 
-
+------------------------
 
 	#include <stdio.h>
 	#include <string.h>
@@ -410,7 +417,7 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 	        return (0);
 	}
 
-
+-----------------------
 
 	#include <stdio.h>
 	#include <string.h>
