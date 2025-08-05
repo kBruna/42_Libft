@@ -6,7 +6,7 @@
 /*   By: buehara <buehara@student.42sp.org.br>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/27 15:27:46 by buehara           #+#    #+#             */
-/*   Updated: 2025/08/04 18:54:55 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/05 16:18:15 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,28 +32,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_memset(ptr, 0, size * nmemb);
 	return (ptr);
 }
-/*
-#include <stdio.h>
-#include <stdlib.h>
-int	main(void)
-{
-	int	str_size = 10;
-	char	*test1;
-	char	*test2;
-
-	test1 = (char *)calloc(str_size, sizeof(char));
-	test2 = (char *)ft_calloc(str_size, sizeof(char));
-	
-	if (test1 != NULL)
-		printf("Calloc Allocated!\n");
-	else
-		printf("Calloc Failled!\n");
-	if (test2 != NULL)
-		printf("FT_Calloc Allocated!\n");
-	else
-		printf("Calloc Failled!\n");
-
-	free(test1);
-	free(test2);
-	return (0);
-}*/

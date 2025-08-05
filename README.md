@@ -330,17 +330,232 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 
 ### --------- Tests ----------
 
-int main(void)
-{
-    char    *str1 = "+42lyon1";
-    char    *str2 = "+1";
-    char    *str2 = "-1";
-
-    printf("Original function: \t%d\t%d\t%d\n", atoi(str1), 
-atoi(str2), atoi(str3));
-    printf("My function: \t\t%d\t%d\t%d\n", ft_atoi(str1), 
-ft_atoi(str2), ft_atoi(str3));
-    return (0);
-}
+	int main(void)
+	{
+	    char    *str1 = "+42lyon1";
+	    char    *str2 = "+1";
+	    char    *str2 = "-1";
+	
+	    printf("Original function: \t%d\t%d\t%d\n", atoi(str1), 
+	atoi(str2), atoi(str3));
+	    printf("My function: \t\t%d\t%d\t%d\n", ft_atoi(str1), 
+	ft_atoi(str2), ft_atoi(str3));
+	    return (0);
+	}
 
 -------------------------
+
+	#include <stdio.h>
+	#include <string.h>
+	#include <bsd/string.h>
+	int     main(void)
+	{
+	        char    str_orig1[] = "ABCDEFGHIJKLMNOPQRSTUVXWYZ";
+	        char    str_my1[] = "ABCDEFGHIJKLMNOPQRSTUVXWYZ";
+	        char    str_my2[] = "Hello []$^&*()_+{}| World!";
+	        char    str_orig2[] = "Hello []$^&*()_+{}| World!";
+		int n = 5;
+	
+		ft_bzero(&str_my1[n], n);
+		ft_bzero(&str_my2[n], n);
+		bzero(&str_orig1[n], n);
+		bzero(&str_orig2[n], n);
+	    
+		printf("\nOriginal Function:\n\tString 01: %.30s\n\t
+		String 02: %.30s", str_orig1, str_orig2);
+	
+		printf("\n\nMy function:\n\tString 01: %.30s\n\t
+		String 02: %.30s\n", str_my2,  str_my1);
+    
+		return (0)
+	}
+	    
+--------------------------
+
+	#include <stdio.h>
+	#include <stdlib.h>
+	int main(void)
+	{
+	    int str_size = 10;
+	    char    *test1;
+	    char    *test2;
+	
+	    test1 = (char *)calloc(str_size, sizeof(char));
+	    test2 = (char *)ft_calloc(str_size, sizeof(char));
+    
+	    if (test1 != NULL)
+	        printf("Calloc Allocated!\n");
+	    else
+	        printf("Calloc Failled!\n");
+	    if (test2 != NULL)
+	        printf("FT_Calloc Allocated!\n");
+	    else
+	        printf("Calloc Failled!\n");
+
+	    free(test1);
+	    free(test2);
+	    return (0);
+	}
+	
+-----------------------------
+
+	#include <ctype.h>
+	#include <stdio.h>
+	int     main(void)
+	{
+		int     test = '0';
+		int     test2 = '9';
+		char    test3 = 'a';
+		char    test4 = '=';
+		char    test5 = '!';
+		char    test6 = '#';
+
+		printf("Teste 1 Valor [%d] :\n\tOriginal: %d", test, isalnum(test));
+		printf("\n\tft_isdigit: %d\n\n", ft_isalnum(test));
+	       
+		printf("Teste 2 Valor [%d] :\n\tOriginal: %d", test2, isalnum(test2));
+		printf("\n\tft_isdigit: %d\n\n", ft_isalnum(test2));
+	       
+		printf("Teste 3 Valor [%c] :\n\tOriginal: %d", test3, isalnum(test3));
+		printf("\n\tft_isdigit: %d\n\n", ft_isalnum(test3));
+	       
+		printf("Teste 4 Valor [%c] :\n\tOriginal: %d", test4, isalnum(test4));
+		printf("\n\tft_isdigit: %d\n\n", ft_isalnum(test4));
+	       
+		printf("Teste 5 Valor [%c] :\n\tOriginal: %d", test5, isalnum(test5));
+		printf("\n\tft_isdigit: %d\n\n", ft_isalnum(test5));
+	       
+		printf("Teste 6 Valor [%c] :\n\tOriginal: %d", test6, isalnum(test6));
+		printf("\n\tft_isdigit: %d\n\n", ft_isalnum(test6));
+
+		return (0);
+	}
+	
+-----------------------------
+
+	#include <ctype.h>
+	#include <stdio.h>
+	int main(void)
+	{
+	    char    test = '1';
+	    char    test2 = 'a';
+	    char    test3 = 'A';
+	    char    test4 = 'b';
+	    char    test5 = '!';
+	    char    test6 = '$';
+	    char    test7 = '^';
+
+	    printf("Teste 1:\n\tOriginal 1: %d\n", isalpha(test));
+	    printf("\tft_isalpha 1: %d\n\n", ft_isalpha(test));
+
+	    printf("Teste 2:\n\tOriginal a: %d\n", isalpha(test2));
+	    printf("\tft_isalpha a: %d\n\n", ft_isalpha(test2));
+	    
+	    printf("Teste 3:\n\tOriginal A: %d\n", isalpha(test3));
+	    printf("\tft_isalpha A: %d\n\n", ft_isalpha(test3));
+	    
+	    printf("Teste 4:\n\tOriginal b: %d\n", isalpha(test4));
+	    printf("\tft_isalpha b: %d\n\n", ft_isalpha(test4));
+	    
+	    printf("Teste 5:\n\tOriginal !: %d\n", isalpha(test5));
+	    printf("\tft_isalpha !: %d\n\n", ft_isalpha(test5));
+	    
+	    printf("Teste 6:\n\tOriginal $: %d\n", isalpha(test6));
+	    printf("\tft_isalpha $: %d\n\n", ft_isalpha(test6));
+	    
+	    printf("Teste 7:\n\tOriginal ^: %d\n", isalpha(test7));
+	    printf("\tft_isalpha ^: %d\n\n", ft_isalpha(test7));
+
+	    return (0);
+	}
+
+---------------------------------
+
+	#include <ctype.h>
+	#include <stdio.h>
+	int     main(void)
+	{
+		char    test = ;
+		char    test2 = 9;
+		char    test3 = 'a';
+		char    test4 = '=';
+		char    test5 = '!';
+		char    test6 = '#';
+
+		printf("Teste 1 Valor [%d] :\n\tOriginal: %d", test, isascii(test));
+		printf("\n\tft_isascii: %d\n\n", ft_isascii(test));
+		printf("Teste 2 Valor [%d] :\n\tOriginal: %d", test2, isascii(test2));
+		printf("\n\tft_isascii: %d\n\n", ft_isascii(test2));
+		printf("Teste 3 Valor [%c] :\n\tOriginal: %d", test3, isascii(test3));
+		printf("\n\tft_isascii: %d\n\n", ft_isascii(test3));
+		printf("Teste 4 Valor [%c] :\n\tOriginal: %d", test4, isascii(test4));
+		printf("\n\tft_isascii: %d\n\n", ft_isascii(test4));
+		printf("Teste 5 Valor [%c] :\n\tOriginal: %d", test5, isascii(test5));
+		printf("\n\tft_isascii: %d\n\n", ft_isascii(test5));
+		printf("Teste 6 Valor [%c] :\n\tOriginal: %d", test6, isascii(test6));
+		printf("\n\tft_isascii: %d\n\n", ft_isascii(test6));
+
+		return (0);
+	}
+
+--------------------------------
+
+	#include <ctype.h>
+	#include <stdio.h>
+	int     main(void)
+	{
+		int     test = 0;
+		int     test2 = 9;
+		char    test3 = '1';
+		int    test4 = '2';
+		int    test5 = '5';
+		char    test6 = '#';
+
+		printf("Teste 1 Valor [%d] :\n\tOriginal: %d", test, isdigit(test));
+		printf("\n\tft_isdigit: %d\n\n", ft_isdigit(test));
+		printf("Teste 2 Valor [%d] :\n\tOriginal: %d", test2, isdigit(test2));
+		printf("\n\tft_isdigit: %d\n\n", ft_isdigit(test2));
+		printf("Teste 3 Valor [%c] :\n\tOriginal: %d", test3, isdigit(test3));
+		printf("\n\tft_isdigit: %d\n\n", ft_isdigit(test3));
+		printf("Teste 4 Valor [%d] :\n\tOriginal: %d", test4, isdigit(test4));
+		printf("\n\tft_isdigit: %d\n\n", ft_isdigit(test4));
+		printf("Teste 5 Valor [%d] :\n\tOriginal: %d", test5, isdigit(test5));
+		printf("\n\tft_isdigit: %d\n\n", ft_isdigit(test5));
+		printf("Teste 6 Valor [%c] :\n\tOriginal: %d", test6, isdigit(test6));
+		printf("\n\tft_isdigit: %d\n\n", ft_isdigit(test6));
+
+		return (0);
+	}
+	
+------------------------------------
+
+	#include <ctype.h>
+	#include <stdio.h>
+	int     main(void)
+	{
+		int     test = '0';
+		int     test2 = '9';
+		char    test3 = ' ';
+		char    test4 = '\n';
+		char    test5 = '!';
+		char    test6 = '#';
+
+		printf("Teste 1 Valor [%d] :\n\tOriginal: %d", test, isprint(test));
+		printf("\n\tft_isprint: %d\n\n", ft_isprint(test));
+		printf("Teste 2 Valor [%d] :\n\tOriginal: %d", test2, isprint(test2));
+		printf("\n\tft_isprint: %d\n\n", ft_isprint(test2));
+		printf("Teste 3 Valor [%c] :\n\tOriginal: %d", test3, isprint(test3));
+		printf("\n\tft_isprint: %d\n\n", ft_isprint(test3));
+		printf("Teste 4 Valor [%c] :\n\tOriginal: %d", test4, isprint(test4));
+		printf("\n\tft_isprint: %d\n\n", ft_isprint(test4));
+		printf("Teste 5 Valor [%c] :\n\tOriginal: %d", test5, isprint(test5));
+		printf("\n\tft_isprint: %d\n\n", ft_isprint(test5));
+		printf("Teste 6 Valor [%c] :\n\tOriginal: %d", test6, isprint(test6));
+		printf("\n\tft_isprint: %d\n\n", ft_isprint(test6));
+
+		return (0);
+	}
+	
+-----------------------------------
+
+
