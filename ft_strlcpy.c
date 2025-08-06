@@ -6,7 +6,7 @@
 /*   By: buehara <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 14:51:13 by buehara           #+#    #+#             */
-/*   Updated: 2025/08/05 18:28:40 by buehara          ###   ########.fr       */
+/*   Updated: 2025/08/05 20:34:10 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	count = 0;
 	ctrl = 0;
 	while (src[ctrl] != '\0')
-	{
 		ctrl++;
-	}
 	if (size > 0)
 	{
 		while ((src[count] != '\0') && (count < size - sizeof(char)))
