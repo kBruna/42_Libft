@@ -4,7 +4,7 @@
 
 ### ------------- Basic Functions List #<ctype.h> -----------------
 
-- [x] `ft_atoi` - Test OK
+- [x] `ft_atoi` - [Test OK](#ft_atoi)
 
 	`int	ft_atoi(const char *nptr);`
 
@@ -14,7 +14,7 @@ Return value: Converted Value or 0 on error.
 
 
 
-- [x] `ft_bzero` - Test OK
+- [x] `ft_bzero` - [Test OK](#ft_bzero)
 
 	`void	ft_bzero(void *s, size_t n);`
 
@@ -24,7 +24,7 @@ Return value: None.
 
 
 
-- [x] `ft_isalnum` - Test OK
+- [x] `ft_isalnum` - [Test OK](#ft_isalnum)
 
 	`int	ft_isalnum(int c);`
 
@@ -32,7 +32,7 @@ Checks for an alphabetic character; it is equivalent to (isalpha(c) || isdigit(c
 
 
 
-- [x] `ft_isalpha` - Test OK
+- [x] `ft_isalpha` - [Test OK](#ft_isalpha)
 
 	`int	ft_isalpha(int c);`
 
@@ -40,7 +40,7 @@ Checks for an alphabetic character; in the standard "C" locale, it is equivalent
 
 
 
-- [x] `ft_isascii` - Test OK
+- [x] `ft_isascii` - [Test OK](#ft_isascii)
 
 	`int	ft_isascii(int c);`
 
@@ -48,7 +48,7 @@ Checks whether c is a 7-bit unsigned char value that fits into the ASCII charact
 
 
 
-- [x] `ft_isdigit` - Test OK
+- [x] `ft_isdigit` - [Test OK](#ft_isdigit))
 
 	`int	ft_isdigit(int c);`
 
@@ -56,7 +56,7 @@ Checks for a digit (0 through 9).
 
 
 
-- [x] `ft_isprint` - Test OK
+- [x] `ft_isprint` - [Test OK](#ft_isprint)
 
 	`int	ft_isprint(int c);`
 	
@@ -64,7 +64,7 @@ Checks for any printable character except space.
 
 
 
-- [x] `ft_memcpy` - Test OK
+- [x] `ft_memcpy` - [Test OK](#ft_memcpy)
 
 	`void	*ft_memcpy(void *dest, const void *src, size_t n);`
 
@@ -74,7 +74,7 @@ Return value: Pointer to dest.
 
 
 
-- [x] `ft_memchr` - Test OK
+- [x] `ft_memchr` - [Test OK](#ft_memchr)
 
 	`void	*ft_memchr(const void *s, int c, size_t n);`
 
@@ -84,7 +84,7 @@ Return value: Pointer to matching type to the matching byte or NULL of the chara
 
 
 
-- [x] `ft_memcmp` - Test OK
+- [x] `ft_memcmp` - [Test OK](#ft_memcmp)
 
 	`int	ft_memcmp(const void *s1, const void *s2, size_t n);`
 
@@ -94,7 +94,7 @@ Return value: Function returns an integer less than, equal to, or than greater z
 
 
 
-- [x] `ft_memmove` - Test OK
+- [x] `ft_memmove` - [Test OK](#ft_memmove)
 
 	`void	ft_memmove(void *dest, const void *src, size_t n);`
 
@@ -104,7 +104,7 @@ Return value: Function returns a pointer to dest.
 
 
 
-- [x] `ft_memset` - Test OK
+- [x] `ft_memset` - [Test OK](#ft_memset)
 
 	`void	ft_memset(void *s, int c, size_t n);`
 
@@ -114,7 +114,7 @@ Return value: Function returns a pointer to memory area s.
 
 
 
-- [x] `ft_strlen` - Test OK
+- [x] `ft_strlen` - [Test OK](#ft_strlen)
 
 	`size_t	ft_strlen(const char *s);`
 
@@ -124,7 +124,7 @@ Return value: Function returns the number of bytes in the string pointed to by s
 
 
 
-- [x] `ft_strlcpy` - Test OK
+- [x] `ft_strlcpy` - [Test OK](#ft_strlcpy)
 
 	`size_t	ft_strlcpy(char *dst, const char *src, size_t size);`
 	
@@ -134,7 +134,7 @@ Return value: The length of src (size_t).
 
 
 
-- [x] `ft_strlcat` - Test OK
+- [x] `ft_strlcat` - [Test OK](#ft_strlcat)
 
 	`size_t	ft_strlcat(char *dst, const char *src, size_t size);`
 
@@ -144,7 +144,7 @@ Return values: For sucessful concatenation: size_t src + dst.
 
 
 
-- [x] `ft_strchr` - Test OK
+- [x] `ft_strchr` - [Test OK](#ft_strchr)
 
 	`char	*ft_strchr(const char *s, int c);`
 
@@ -153,7 +153,7 @@ Return value: Pointer to the matched character or NULL if the character is not f
 
 
 
-- [x] `ft_strncmp` - Test OK
+- [x] `ft_strncmp` - [Test OK](#ft_strncmp)
 
 	`int	ft_strncmp(const char *s1, const char *s2, size_t n);`
 
@@ -163,7 +163,7 @@ Return value: Function return an integer less than, equal to, or greater than ze
 
 
 
-- [x] `ft_strnstr` - Test OK
+- [x] `ft_strnstr` - [Test OK](#ft_strnstr)
 
 	`char	*ft_strnstr(const char *big, const char *little, size_t len);`
 	
@@ -173,7 +173,7 @@ Return value: If little is an empty string, big is returned; if little occurs no
 
 
 
-- [x] `ft_strrchr` - Test OK
+- [x] `ft_strrchr` - [Test OK](#ft_strrchr)
 
 	`char	*ft_strrchr(const char *s, int c);`
 	
@@ -182,7 +182,7 @@ Return Values: Pointer to the matched character or NULL if the character is not 
 
 
 
-- [x] `ft_tolower` - Test OK
+- [x] `ft_tolower` - [Test OK](#ft_tolower)
 
 	`int	ft_tolower(int c);`
 	
@@ -190,7 +190,7 @@ If c is an uppercase letter, returns its lowercase equivalent, if a lowercase re
 
 
 
-- [x] `ft_toupper` - Test OK
+- [x] `ft_toupper` - [Test OK](#ft_toupper)
 
 	`int	ft_toupper(int c);`
 
@@ -200,7 +200,7 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 
 ##### with malloc()
 
- - [x] `ft_calloc` - Test OK
+ - [x] `ft_calloc` - [Test OK](#ft_calloc)
 
 	`void	*ft_calloc(size_t nmemb, size_t size);`
 
@@ -208,7 +208,9 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 
 
 
- - [x] `ft_strdup` - Test OK
+ - [x] `ft_strdup` - [Test OK](#ft_strdup)
+
+	`char	*ft_strdup(const char *s)
 
 	`char	ft_strdub(const char *s);`
 
@@ -219,57 +221,57 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 ### --------------- Extra Functions ------------
 
 
-- [x] `ft_itoa` - Test OK
+- [x] `ft_itoa` - [Test OK](#ft_itoa)
 
 	`char	*ft_itoa(int n);`
 
 
-- [x] `ft_putchar_fd` - Test OK
+- [x] `ft_putchar_fd` - [Test OK](#ft_putchar_fd)
 
 	`void	ft_putchar_fd(char c, int fd);`
 
 
-- [x] `ft_putendl_fd` - Test OK
+- [x] `ft_putendl_fd` - [Test OK](#ft_putendl_fd)
 
 	`void	ft_putendl_fd(char *s, int fd);`
 
 
-- [x] `ft_putnbr_fd` - Test OK
+- [x] `ft_putnbr_fd` - [Test OK](#ft_putnbr_fd)
 
 	`void	ft_putnbr_fd(int n, int fd);`
 
 
-- [x] `ft_putstr_fd` - Test OK
+- [x] `ft_putstr_fd` - [Test OK](#ft_putstr_fd))
 
 	`void	ft_putstr_fd(char *s, int fd);`
 
 
-- [x] `ft_split` - Test OK
+- [x] `ft_split` - [Test OK](#ft_split)
 
 	`char **ft_split(char const *s, char c);`
 
 
-- [x] `ft_striteri` - Test OK
+- [x] `ft_striteri` - [Test OK](#ft_striteri)
 
 	`void	ft_striteri(char *s, void (*f)(unsigned int, char*));`
 
 
-- [x] `ft_strjoin` - Test OK
+- [x] `ft_strjoin` - [Test OK](#ft_strjoin)
 
 	`char	ft_strjoin(char const *s1, char const *s2);`
 
 
-- [x] `ft_strmapi` - Test OK
+- [x] `ft_strmapi` - [Test OK](#ft_strmapi)
 
 	`char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));`
 
 
-- [x] `ft_strtrin` - Test OK
+- [x] `ft_strtrin` - [Test OK](#ft_strtrim)
 
 	`char	*ft_strtrim(char const *s1, char const *set);`
 
 
-- [x] `ft_substr` - Test OK
+- [x] `ft_substr` - [Test OK](#ft_substr)
 
 	`char	*ft_substr(char const *s, insigned int start, size_t len);`
 
@@ -283,52 +285,54 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 	}		t_list;
 
 
-- [x] `ft_lstnew` - Test OK
+- [x] `ft_lstnew` - [Test OK](#ft_lstnew)
 
 	`t_list	*ft_lstnew(void *content);`
 
 
-- [x] `ft_lstadd_front` - Test OK
+- [x] `ft_lstadd_front` - [Test OK](#ft_lstadd_front)
 
 	`void	ft_lstadd_front(t_list **lst, t_list *new);`
 
 
-- [x] `ft_lstsize` - Test OK
+- [x] `ft_lstsize` - [Test OK](#ft_lstsize)
 
 	`int	ft_lstsize(t_list *lst);`
 
 
-- [x] `ft_lstlast` - Test OK
+- [x] `ft_lstlast` - [Test OK](#ft_lstlast)
 
 	`t_list	*ft_lstlast(t_list *lst);`
 
 
-- [x] `ft_lstadd_back` - Test OK
+- [x] `ft_lstadd_back` - [Test OK](#ft_lstadd_back)
 
 	`void	ft_lstadd_back(t_list **lst, t_list new);`
 
 
-- [x] `ft_lstdelone` - Test OK
+- [x] `ft_lstdelone` - [Test OK](#ft_lstdelone)
 
 	`void	ft_delone(t_list *lst, void (*del)(void *));`
 
 
-- [x] `ft_lstclear` - Test OK
+- [x] `ft_lstclear` - [Test OK](#ft_lstclear)
 
 	`void	ft_lstclear(t_list **lst, void (*f)(void *));`
 
 
-- [x] `ft_lstiter` - Test OK
+- [x] `ft_lstiter` - [Test OK](#ft_lstiter)
 
 	`void	ft_lstiter(t_list *lst, void (*f)(void *));`
 
 
-- [x] `ft_lstmap` - Test OK
+- [x] `ft_lstmap` - [Test OK](#ft_lstmap)
 
 	`t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));`
 
 
-### --------- Tests ----------
+## --------- Tests ----------
+
+### ft_atoi
 
 	int main(void)
 	{
@@ -344,6 +348,8 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 	}
 
 -------------------------
+
+### ft_bzero
 
 	#include <stdio.h>
 	#include <string.h>
@@ -372,6 +378,8 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 	    
 --------------------------
 
+### ft_calloc
+
 	#include <stdio.h>
 	#include <stdlib.h>
 	int main(void)
@@ -398,6 +406,8 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 	}
 	
 -----------------------------
+
+### ft_isnum
 
 	#include <ctype.h>
 	#include <stdio.h>
@@ -432,6 +442,8 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 	}
 	
 -----------------------------
+
+### ft_isalpha
 
 	#include <ctype.h>
 	#include <stdio.h>
@@ -471,6 +483,8 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 
 ---------------------------------
 
+### ft_isascii
+
 	#include <ctype.h>
 	#include <stdio.h>
 	int     main(void)
@@ -499,6 +513,8 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 	}
 
 --------------------------------
+
+### ft_isdigit
 
 	#include <ctype.h>
 	#include <stdio.h>
@@ -529,6 +545,8 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 	
 ------------------------------------
 
+### ft_isprint
+
 	#include <ctype.h>
 	#include <stdio.h>
 	int     main(void)
@@ -558,6 +576,8 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 	
 -----------------------------------
 
+### ft_itoa
+
 	#include <stdio.h>
 	int main(void)
 	{
@@ -573,6 +593,8 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 	}
 	
 --------------------------------
+
+### ft_memcpy
 
 	#include <stdio.h>
 	#include <string.h>
@@ -617,6 +639,8 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 	
 -----------------------------------
 
+### ft_memmove
+
 	#include <stddef.h>
 	#include <stdio.h>
 	#include <string.h>
@@ -646,6 +670,8 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 
 -----------------------------------
 
+### ft_memset
+
 	#include <stdio.h>
 	#include <string.h>
 	int main(void)
@@ -668,6 +694,8 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 
 ------------------------------------
 
+### ft_split
+
 	#include <stdio.h>
 	int main(void)
 	{
@@ -688,6 +716,8 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 
 ------------------------------------
 
+### ft_strchr
+
 	#include <stdio.h>
 	#include <string.h>
 	int main(void)
@@ -702,6 +732,8 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 	}
 
 ------------------------------------
+
+### ft_strdup
 
 	#include <stdio.h>
 	#include <bsd/string.h>
@@ -742,6 +774,8 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 
 -----------------------------------
 
+### ft_striteri
+
 	#include <stdio.h>
 	void    test_func(unsigned int i, char *c) 
 	{
@@ -763,6 +797,8 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 
 -------------------------------------
 
+### ft_strjoin
+
 	#include <stdio.h>
 	int main(void)
 	{
@@ -777,6 +813,8 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 	}
 
 -------------------------------------
+
+### ft_strlcat
 
 	#include <bsd/string.h>
 	#include <stdio.h>
@@ -797,6 +835,8 @@ If c is an lowercase letter, returns its uppercase equivalent, if a uppercase re
 	}
 
 ---------------------------------------
+
+### ft_strlcpy
 
 #include <stdio.h>
 #include <string.h>
@@ -840,6 +880,8 @@ int main(void)
 
 -------------------------------------------
 
+### ft_strlen
+
 	#include <stdlib.h>
 	#include <stdio.h>
 	int main(int argc, char **argv)
@@ -852,6 +894,8 @@ int main(void)
 	}
 
 -------------------------------------------
+
+### ft_strmapi
 
 	#include <stdio.h>
 	char    test_func(unsigned int i, char c) 
@@ -874,6 +918,8 @@ int main(void)
 
 ---------------------------------------------
 
+### ft_strncmp
+
 	#include <stdio.h>
 	#include <string.h>
 	int main(void)
@@ -889,6 +935,8 @@ int main(void)
 	}
 
 ---------------------------------------------
+
+### ft_strnstr
 
 	#include <stdio.h>
 	#include <bsd/string.h>
@@ -907,6 +955,8 @@ int main(void)
 
 ---------------------------------------------
 
+### ft_strrchr
+
 #include <stdio.h>
 #include <string.h>
 int main(void)
@@ -921,6 +971,8 @@ int main(void)
 }
 
 ---------------------------------------------
+
+### ft_substr
 
 	#include <stdio.h>
 	int main(void)
