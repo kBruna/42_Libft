@@ -6,7 +6,7 @@
 /*   By: buehara <buehara@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/12 18:09:42 by buehara           #+#    #+#             */
-/*   Updated: 2025/10/06 20:21:23 by buehara          ###   ########.fr       */
+/*   Updated: 2025/12/10 21:57:49 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ char	*ft_gnl_strlcpy(t_link *node, int len)
 
 	new_len = 0;
 	ctrl = 0;
-	line = malloc(sizeof(char) * len + 1);
+	line = (char *)ft_calloc(sizeof(char), len + 1);
 	if (!line)
 		return (NULL);
 	temp = node->content;
@@ -76,7 +76,7 @@ char	*ft_rest(char *rest, int fd, t_link *node, int *find)
 
 	if (!rest)
 	{
-		rest = malloc(sizeof(char) * BUFFER_SIZE + 1);
+		rest = (char *)ft_calloc(sizeof(char), BUFFER_SIZE + 1);
 		if (!rest)
 			return (NULL);
 		size_read = read(fd, rest, BUFFER_SIZE);
@@ -104,10 +104,10 @@ t_link	*ft_new_node(char *str, t_link *prev)
 	t_link	*node;
 	int		ctrl;
 
-	node = malloc(sizeof(t_link));
+	node = (t_link *)ft_calloc(sizeof(t_link), 1);
 	if (!node)
 		return (NULL);
-	node->content = malloc(sizeof(char) * BUFFER_SIZE + 1);
+	node->content = (char *)ft_calloc(sizeof(char), BUFFER_SIZE + 1);
 	if (!node->content)
 		return (NULL);
 	ctrl = 0;
@@ -137,7 +137,7 @@ char	*ft_gnl_realloc(char *content)
 	if (content && content[ctrl] == '\n')
 	{
 		ctrl++;
-		rest = malloc(sizeof(char) * BUFFER_SIZE + 2);
+		rest = (char *)ft_calloc(sizeof(char), BUFFER_SIZE + 2);
 		if (!rest)
 			return (NULL);
 		new_len = 0;

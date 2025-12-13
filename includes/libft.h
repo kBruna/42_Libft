@@ -6,7 +6,7 @@
 /*   By: buehara <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 16:33:21 by buehara           #+#    #+#             */
-/*   Updated: 2025/08/05 18:44:40 by buehara          ###   ########.fr       */
+/*   Updated: 2025/12/10 16:52:30 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,12 @@
 # include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>
+
+enum	e_bool
+{
+	FALSE,
+	TRUE
+};
 
 typedef struct s_list
 {
@@ -36,6 +42,8 @@ int		ft_isalpha(int c);
 int		ft_isascii(int c);
 
 int		ft_isdigit(int c);
+
+int		ft_isspace(int c);
 
 int		ft_isprint(int c);
 
