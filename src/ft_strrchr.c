@@ -6,7 +6,7 @@
 /*   By: buehara <buehara@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 19:03:27 by buehara           #+#    #+#             */
-/*   Updated: 2025/10/06 20:17:44 by buehara          ###   ########.fr       */
+/*   Updated: 2025/12/16 20:45:09 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strrchr(const char *s, int c)
 
 	len = ft_strlen(s);
 	while (len >= 0)
-	{	
+	{
 		if (s[len] == (char)c)
 			return ((char *)(&s[len]));
 		len--;

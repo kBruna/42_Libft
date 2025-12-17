@@ -6,7 +6,7 @@
 /*   By: buehara <buehara@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 19:13:40 by buehara           #+#    #+#             */
-/*   Updated: 2025/10/06 20:17:44 by buehara          ###   ########.fr       */
+/*   Updated: 2025/12/16 20:43:50 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,8 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 	n--;
 	while ((int)n >= 0)
 	{
-			dest[n] = org[n];
-			n--;
+		dest[n] = org[n];
+		n--;
 	}
 	return (dest);
 }
