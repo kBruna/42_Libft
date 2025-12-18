@@ -6,7 +6,7 @@
 /*   By: buehara <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 16:33:21 by buehara           #+#    #+#             */
-/*   Updated: 2025/12/10 16:52:30 by buehara          ###   ########.fr       */
+/*   Updated: 2025/12/18 15:07:44 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,21 @@ enum	e_bool
 {
 	FALSE,
 	TRUE
+};
+
+enum	e_limits
+{
+	MIN_INT = -2147483648,
+	MAX_INT = 2147483647,
+	UNSG_INT = 4294967295
+};
+
+enum	e_std
+{
+	STD_IN,
+	STD_OUT,
+	STD_ERR,
+	MAX_FD = 1024
 };
 
 typedef struct s_list
