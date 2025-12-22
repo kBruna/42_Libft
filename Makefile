@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: buehara <marvin@42.fr>                     +#+  +:+       +#+         #
+#    By: buehara <buehara@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/17 12:44:47 by buehara           #+#    #+#              #
-#    Updated: 2025/12/10 22:00:21 by buehara          ###   ########.fr        #
+#    Updated: 2025/12/22 12:27:07 by buehara          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -85,25 +85,23 @@ all: $(NAME)
 
 
 $(NAME) : $(OBJ) 
-	$(AR) $(RCS) $(NAME) $(OBJ)
+	@$(AR) $(RCS) $(NAME) $(OBJ)
 
 
 $(OBJ_DIR)/%.o : $(SRC_DIR)/%.c | $(OBJ_DIR)
-	$(CC) $(CFLAGS) -c $< -o $@
+	@$(CC) $(CFLAGS) -c $< -o $@
 
 
 $(OBJ_DIR) :
-	mkdir -p $(OBJ_DIR)
-	mkdir $(OBJ_DIR)/gnl
-	mkdir $(OBJ_DIR)/printf
-
+	@mkdir -p $(OBJ_DIR)
+	@mkdir $(OBJ_DIR)/gnl
+	@mkdir $(OBJ_DIR)/printf
 
 clean:
-	rm -fr $(OBJ_DIR)
-
+	@rm -fr $(OBJ_DIR)
 
 fclean: clean
-	rm -fr $(NAME)
+	@rm -fr $(NAME)
 
 
 re: fclean all
