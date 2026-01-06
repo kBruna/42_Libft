@@ -6,7 +6,7 @@
 /*   By: buehara <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 16:33:21 by buehara           #+#    #+#             */
-/*   Updated: 2025/12/18 15:07:44 by buehara          ###   ########.fr       */
+/*   Updated: 2026/01/06 17:35:52 by buehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,8 @@ int		ft_isalpha(int c);
 int		ft_isascii(int c);
 
 int		ft_isdigit(int c);
+
+int		ft_issignal(int c);
 
 int		ft_isspace(int c);
 
