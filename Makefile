@@ -6,7 +6,7 @@
 #    By: buehara <buehara@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/17 12:44:47 by buehara           #+#    #+#              #
-#    Updated: 2025/12/22 12:27:07 by buehara          ###   ########.fr        #
+#    Updated: 2026/01/06 17:36:40 by buehara          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,6 +33,8 @@ C_FILES = \
 	ft_isalnum.c	\
 	ft_isalpha.c	\
 	ft_isascii.c	\
+	ft_issignal.c	\
+	ft_isspace.c	\
 	ft_isdigit.c	\
 	ft_isprint.c	\
 	ft_memchr.c	\
