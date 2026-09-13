@@ -23,6 +23,12 @@ enum	e_bool
 	TRUE
 };
 
+enum	e_return
+{
+	SUCESS,
+	FAILED
+};
+
 enum	e_limits
 {
 	MIN_INT = -2147483648,
