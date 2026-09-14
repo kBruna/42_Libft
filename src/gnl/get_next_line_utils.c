@@ -12,7 +12,7 @@
 
 #include "../../includes/get_next_line.h"
 
-void	ft_free(t_link **buffer, char **rest)
+void	ft_free_gnl(t_link **buffer, char **rest)
 {
 	t_link	*node;
 
@@ -90,7 +90,7 @@ char	*ft_rest(char *rest, int fd, t_link *node, int *find)
 		if (size_read < 0)
 		{
 			rest[0] = '\0';
-			ft_free(&node, &rest);
+			ft_free_gnl(&node, &rest);
 			return (NULL);
 		}
 		if (size_read < BUFFER_SIZE)

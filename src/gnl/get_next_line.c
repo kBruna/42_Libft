@@ -88,6 +88,6 @@ char	*get_next_line(int fd)
 		while (node->next != NULL)
 			node = node->next;
 	tail[fd] = ft_gnl_realloc(node->content);
-	ft_free(&node, &tail[fd]);
+	ft_free_gnl(&node, &tail[fd]);
 	return (line);
 }

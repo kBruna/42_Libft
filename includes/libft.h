@@ -16,6 +16,7 @@
 # include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include "ft_printf.h"
 
 enum	e_bool
 {
@@ -91,6 +92,8 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
 char	**ft_split(char const *s, char c);
+
+void	ft_split_free(char **ptr, size_t ctrl);
 
 char	*ft_strchr(const char *s, int c);
 

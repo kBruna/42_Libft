@@ -55,7 +55,7 @@ static void	ft_word_runner(char const *s, char c, size_t *start, size_t *end)
 	}
 }
 
-static void	*ft_free(char **ptr, size_t ctrl)
+void	ft_split_free(char **ptr, size_t ctrl)
 {
 	size_t	index;
 
@@ -69,7 +69,6 @@ static void	*ft_free(char **ptr, size_t ctrl)
 		}
 		free(ptr);
 	}
-	return (NULL);
 }
 
 static char	**ft_alloc(char const *s, char **ptr, char c)
@@ -89,7 +88,7 @@ static char	**ft_alloc(char const *s, char **ptr, char c)
 			ptr[ctrl] = ft_substr(s, start, end - start);
 			if (ptr[ctrl] == NULL)
 			{
-				ft_free(ptr, ctrl);
+				ft_split_free(ptr, ctrl);
 				return (NULL);
 			}
 			ctrl++;
