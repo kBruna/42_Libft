@@ -60,9 +60,9 @@ void	ft_split_free(char **ptr, size_t ctrl)
 	size_t	index;
 
 	index = 0;
-	if (!ptr[ctrl - 1])
+	if (ptr[ctrl] == NULL)
 	{
-		while (index <= ctrl)
+		while (index < ctrl)
 		{
 			free(ptr[index]);
 			index++;
